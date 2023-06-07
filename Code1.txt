@@ -1,0 +1,1324 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="ctl00_Head1">
+<title>
+	16 day weather forecast
+</title><meta content="weather, weather forecasts, weather data, weather outlook, uk, britain, europe" name="keywords" /><meta name="owner" content="//www.theweatheroutlook.com" /><meta name="robots" content="all,max-image-preview:large" />
+
+  
+<meta property="og:site_name" content="TheWeatherOutlook" />
+<meta property="og:url" content="https://www.theweatheroutlook.com/forecast/uk/barcelona" />
+
+<meta property="fb:app_id" content="321659764531254" />
+  
+<meta property="og:type" content="website" />
+
+    <meta property="og:image" content="//www.theweatheroutlook.com/images/socialmedia/two_fb.jpg" />
+<meta property="fb:admins" content="1540926937" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black" /><meta name="apple-mobile-web-app-title" content="TheWeatherOutlook" /><link rel="apple-touch-icon" href="../../images/site/two-logo-152.png" /><link rel="icon" href="../../images/site/two_logo_xs.png" /><meta name="msapplication-TileImage" content="images/site/two-logo-144.png" /><meta name="msapplication-TileColor" content="#428BCA" /><meta name="theme-color" content="#428BCA" /><link rel="manifest" href="/manifest.json" />
+<style>.pull-left{float:left !important}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:url(/fonts/open-sans-v17-latin-regular.eot);src:local('Open Sans Regular'),local('OpenSans-Regular'),url(/fonts/open-sans-v17-latin-regular.eot?#iefix) format('embedded-opentype'),url(/fonts/open-sans-v17-latin-regular.woff2) format('woff2'),url(/fonts/open-sans-v17-latin-regular.woff) format('woff'),url(/fonts/open-sans-v17-latin-regular.ttf) format('truetype'),url(/fonts/open-sans-v17-latin-regular.svg#OpenSans) format('svg');font-display:swap}
+.img-scj-wrapper{width:100% !important;height:0;position:relative}.img-scj{width:100% !important;height:100% !important;position:absolute}figure{margin-bottom:15px !important;margin-top:15px !important}figcaption{background-color:#EEEEEE;color:black;padding: 14px 5px 14px 5px;text-align:left;margin-bottom:20px;}.img-scj-wrapper p{padding:-20px -20px -20px -20px !important;margin:-20px -20px -20px -20px !important}
+</style>
+
+<link href="../../styles/twoplus4_70.min.css" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9 ]>
+<script src="//www.theweatheroutlook.com/Scripts/html5shiv.js"></script>
+<script src="//www.theweatheroutlook.com/Scripts/respond.min.js"></script>
+<style>
+.btn-group-justified{display:inline !important}
+</style>
+<![endif]-->
+     <script>
+var sw="/sw.min.js";"serviceWorker"in navigator&&navigator.serviceWorker.register(sw).then(function(e){console.log("ServiceWorker scope: ",e.scope)})["catch"](function(e){console.log("ServiceWorker registration failed: ",e)});
+if("standalone"in window.navigator&&window.navigator.standalone){var noddy,remotes=!1;document.addEventListener("click",function(n){for(noddy=n.target;"A"!==noddy.nodeName&&"HTML"!==noddy.nodeName;)noddy=noddy.parentNode;"href"in noddy&&-1!==noddy.href.indexOf("http")&&(-1!==noddy.href.indexOf(document.location.host)||remotes)&&(n.preventDefault(),document.location.href=noddy.href)},!1)}
+function browserSupportsAllFeatures(){return window.Promise&&window.fetch&&window.Symbol}function loadScript(c,a){var b=document.createElement("script");b.src=c;b.onload=function(){a()};b.onerror=function(){a(new Error("Failed to load script "+c))};document.head.appendChild(b)}!function(b,a){typeof module!="undefined"?module.exports=a():typeof define=="function"&&typeof define.amd=="object"?define(a):this[b]=a()}("domready",function(){var f=[],b,g=typeof document=="object"&&document,d=g&&g.documentElement.doScroll,a="DOMContentLoaded",c=g&&(d?/^loaded|^c/:/^loaded|^i|^c/).test(g.readyState);return !c&&g&&g.addEventListener(a,b=function(){g.removeEventListener(a,b),c=1;while(b=f.shift()){b()}}),function(e){c?setTimeout(e,0):f.push(e)}});
+
+</script>
+
+
+
+
+<script>
+<!--Lazyload-->
+var _extends = Object.assign || function (e) { for (var t = 1; t < arguments.length; t++) { var n = arguments[t]; for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]) } return e }, _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }; !function (e, t) { "object" === ("undefined" == typeof exports ? "undefined" : _typeof(exports)) && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : e.LazyLoad = t() }(this, function () { "use strict"; var e = { elements_selector: "img", container: window, threshold: 300, throttle: 150, data_src: "src", data_srcset: "srcset", class_loading: "loading", class_loaded: "loaded", class_error: "error", class_initial: "initial", skip_invisible: !0, callback_load: null, callback_error: null, callback_set: null, callback_processed: null, callback_enter: null }, t = !("onscroll" in window) || /glebot/.test(navigator.userAgent), n = function (e, t) { e && e(t) }, o = function (e) { return e.getBoundingClientRect().top + window.pageYOffset - e.ownerDocument.documentElement.clientTop }, i = function (e, t, n) { return (t === window ? window.innerHeight + window.pageYOffset : o(t) + t.offsetHeight) <= o(e) - n }, s = function (e) { return e.getBoundingClientRect().left + window.pageXOffset - e.ownerDocument.documentElement.clientLeft }, r = function (e, t, n) { var o = window.innerWidth; return (t === window ? o + window.pageXOffset : s(t) + o) <= s(e) - n }, l = function (e, t, n) { return (t === window ? window.pageYOffset : o(t)) >= o(e) + n + e.offsetHeight }, a = function (e, t, n) { return (t === window ? window.pageXOffset : s(t)) >= s(e) + n + e.offsetWidth }, c = function (e, t, n) { return !(i(e, t, n) || l(e, t, n) || r(e, t, n) || a(e, t, n)) }, u = function (e, t) { var n, o = new e(t); try { n = new CustomEvent("LazyLoad::Initialized", { detail: { instance: o } }) } catch (e) { (n = document.createEvent("CustomEvent")).initCustomEvent("LazyLoad::Initialized", !1, !1, { instance: o }) } window.dispatchEvent(n) }, d = function (e, t) { return e.getAttribute("data-" + t) }, h = function (e, t, n) { return e.setAttribute("data-" + t, n) }, _ = function (e, t) { var n = e.parentNode; if ("PICTURE" === n.tagName) for (var o = 0; o < n.children.length; o++) { var i = n.children[o]; if ("SOURCE" === i.tagName) { var s = d(i, t); s && i.setAttribute("srcset", s) } } }, f = function (e, t, n) { var o = e.tagName, i = d(e, n); if ("IMG" === o) { _(e, t); var s = d(e, t); return s && e.setAttribute("srcset", s), void (i && e.setAttribute("src", i)) } "IFRAME" !== o ? i && (e.style.backgroundImage = 'url("' + i + '")') : i && e.setAttribute("src", i) }, p = "classList" in document.createElement("p"), m = function (e, t) { p ? e.classList.add(t) : e.className += (e.className ? " " : "") + t }, g = function (e, t) { p ? e.classList.remove(t) : e.className = e.className.replace(new RegExp("(^|\\s+)" + t + "(\\s+|$)"), " ").replace(/^\s+/, "").replace(/\s+$/, "") }, v = function (t) { this._settings = _extends({}, e, t), this._queryOriginNode = this._settings.container === window ? document : this._settings.container, this._previousLoopTime = 0, this._loopTimeout = null, this._boundHandleScroll = this.handleScroll.bind(this), this._isFirstLoop = !0, window.addEventListener("resize", this._boundHandleScroll), this.update() }; v.prototype = { _reveal: function (e) { var t = this._settings, o = function o() { t && (e.removeEventListener("load", i), e.removeEventListener("error", o), g(e, t.class_loading), m(e, t.class_error), n(t.callback_error, e)) }, i = function i() { t && (g(e, t.class_loading), m(e, t.class_loaded), e.removeEventListener("load", i), e.removeEventListener("error", o), n(t.callback_load, e)) }; n(t.callback_enter, e), "IMG" !== e.tagName && "IFRAME" !== e.tagName || (e.addEventListener("load", i), e.addEventListener("error", o), m(e, t.class_loading)), f(e, t.data_srcset, t.data_src), n(t.callback_set, e) }, _loopThroughElements: function () { var e = this._settings, o = this._elements, i = o ? o.length : 0, s = void 0, r = [], l = this._isFirstLoop; for (s = 0; s < i; s++) { var a = o[s]; e.skip_invisible && null === a.offsetParent || (t || c(a, e.container, e.threshold)) && (l && m(a, e.class_initial), this._reveal(a), r.push(s), h(a, "was-processed", !0)) } for (; r.length;)o.splice(r.pop(), 1), n(e.callback_processed, o.length); 0 === i && this._stopScrollHandler(), l && (this._isFirstLoop = !1) }, _purgeElements: function () { var e = this._elements, t = e.length, n = void 0, o = []; for (n = 0; n < t; n++) { var i = e[n]; d(i, "was-processed") && o.push(n) } for (; o.length > 0;)e.splice(o.pop(), 1) }, _startScrollHandler: function () { this._isHandlingScroll || (this._isHandlingScroll = !0, this._settings.container.addEventListener("scroll", this._boundHandleScroll)) }, _stopScrollHandler: function () { this._isHandlingScroll && (this._isHandlingScroll = !1, this._settings.container.removeEventListener("scroll", this._boundHandleScroll)) }, handleScroll: function () { var e = this._settings.throttle; if (0 !== e) { var t = Date.now(), n = e - (t - this._previousLoopTime); n <= 0 || n > e ? (this._loopTimeout && (clearTimeout(this._loopTimeout), this._loopTimeout = null), this._previousLoopTime = t, this._loopThroughElements()) : this._loopTimeout || (this._loopTimeout = setTimeout(function () { this._previousLoopTime = Date.now(), this._loopTimeout = null, this._loopThroughElements() }.bind(this), n)) } else this._loopThroughElements() }, update: function () { this._elements = Array.prototype.slice.call(this._queryOriginNode.querySelectorAll(this._settings.elements_selector)), this._purgeElements(), this._loopThroughElements(), this._startScrollHandler() }, destroy: function () { window.removeEventListener("resize", this._boundHandleScroll), this._loopTimeout && (clearTimeout(this._loopTimeout), this._loopTimeout = null), this._stopScrollHandler(), this._elements = null, this._queryOriginNode = null, this._settings = null } }; var w = window.lazyLoadOptions; return w && function (e, t) { var n = t.length; if (n) for (var o = 0; o < n; o++)u(e, t[o]); else u(e, t) }(v, w), v });
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1329918512489494"
+     crossorigin="anonymous"></script>
+    
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZPNGPC');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="canonical" href="https://www.theweatheroutlook.com/forecast/uk/barcelona" /></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZPNGPC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<form name="aspnetForm" method="post" action="./barcelona" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDc0NzU0MTAwD2QWAmYPZBYCAgMPZBYEAgMPZBYQZg9kFgZmDxYCHgRUZXh0BQlCYXJjZWxvbmFkAgEPFgIfAAUXMTYgZGF5IHdlYXRoZXIgZm9yZWNhc3RkAgMPFgIfAAUEOTAwMGQCAQ8UKwACDxYEHgtfIURhdGFCb3VuZGceC18hSXRlbUNvdW50AhBkZBYCZg9kFhQCAQ9kFghmDxUEA3RyOQZUaHUgMTUDSnVuATlkAgQPFQEENm1waGQCCQ8VAQNydDlkAgoPFQIEdHJkOQV0cmQyOWQCAg9kFghmDxUEBHRyMTAGRnJpIDE2A0p1bgIxMGQCBA8VAQUxMW1waGQCCQ8VAQRydDEwZAIKDxUCBXRyZDEwBnRyZDIxMGQCAw9kFghmDxUEBHRyMTEGU2F0IDE3A0p1bgIxMWQCBA8VAQQ2bXBoZAIJDxUBBHJ0MTFkAgoPFQIFdHJkMTEGdHJkMjExZAIED2QWCGYPFQQEdHIxMgZTdW4gMTgDSnVuAjEyZAIEDxUBBDZtcGhkAgkPFQEEcnQxMmQCCg8VAgV0cmQxMgZ0cmQyMTJkAgUPZBYIZg8VBAR0cjEzBk1vbiAxOQNKdW4CMTNkAgQPFQEEN21waGQCCQ8VAQRydDEzZAIKDxUCBXRyZDEzBnRyZDIxM2QCBg9kFghmDxUEBHRyMTQGVHVlIDIwA0p1bgIxNGQCBA8VAQQ1bXBoZAIJDxUBBHJ0MTRkAgoPFQIFdHJkMTQGdHJkMjE0ZAIHD2QWCGYPFQQEdHIxNQZXZWQgMjEDSnVuAjE1ZAIEDxUBBDVtcGhkAgkPFQEEcnQxNWQCCg8VAgV0cmQxNQZ0cmQyMTVkAggPZBYIZg8VBAR0cjE2BlRodSAyMgNKdW4CMTZkAgQPFQEEM21waGQCCQ8VAQRydDE2ZAIKDxUCBXRyZDE2BnRyZDIxNmQCCg8PFgQeC05hdmlnYXRlVXJsBVMvL3d3dy50aGV3ZWF0aGVyb3V0bG9vay5jb20vdHdvZm9yZWNhc3RzL2hvdXJseS13ZWF0aGVyLWZvcmVjYXN0LmFzcHg/bG9jPWJhcmNlbG9uYR4HVmlzaWJsZWdkZAIMDxQrAAJkEBYAFgAWAGQCAg8WAh8ABRNJc3N1ZWQ6IDA2LzA2IDE5OjQwZAIDDxYCHwBlZAIEDxYCHwAFVDxhIGhyZWY9Imh0dHBzOi8vd3d3LnRoZXdlYXRoZXJvdXRsb29rLmNvbS90d29kYXRhL2dmcy5hc3B4P3J1bj0wMCI+R0ZTIDAweiBkYXRhPC9hPmQCCQ9kFgICAw8WAh8ABQliYXJjZWxvbmFkAg0PD2QPEBYGZgIBAgICAwIEAgUWBhYCHg5QYXJhbWV0ZXJWYWx1ZWQWAh8FZBYCHwVkFgIfBWQWAh8FZBYCHwVkFgYCAwIDAgMCAwIDAgNkZAIODw9kDxAWBWYCAQICAgMCBBYFFgIfBWQWAh8FZBYCHwVkFgIfBWQWAh8FBQQ5MDAwFgUCAwIDAgMCA2ZkZAIED2QWCGYPFgIfAgIBZAICDxYCHwICBRYKZg9kFgICAQ8PFgQfAwVPLy93d3cudGhld2VhdGhlcm91dGxvb2suY29tL3dlYXRoZXItbmV3cy82NjQwL2dsYXN0b25idXJ5LWZlc3RpdmFsLTIwMjMtd2VhdGhlch8ABSFHbGFzdG9uYnVyeSBGZXN0aXZhbCAyMDIzIHdlYXRoZXJkZAIBD2QWAgIBDw8WBB8DBUwvL3d3dy50aGV3ZWF0aGVyb3V0bG9vay5jb20vd2VhdGhlci1uZXdzLzY2MzkvZG93bmxvYWQtZmVzdGl2YWwtMjAyMy13ZWF0aGVyHwAFHkRvd25sb2FkIEZlc3RpdmFsIDIwMjMgd2VhdGhlcmRkAgIPZBYCAgEPDxYEHwMFRy8vd3d3LnRoZXdlYXRoZXJvdXRsb29rLmNvbS93ZWF0aGVyLW5ld3MvNjYzNS9zdW1tZXItMjAyMy1zZWNvbmQtdXBkYXRlHwAFGVN1bW1lciAyMDIzIHNlY29uZCB1cGRhdGVkZAIDD2QWAgIBDw8WBB8DBVMvL3d3dy50aGV3ZWF0aGVyb3V0bG9vay5jb20vd2VhdGhlci1uZXdzLzY2MjAvc3RheS1haGVhZC1vZi10aGUtd2VhdGhlci10aGlzLXN1bW1lch8ABSVTdGF5IGFoZWFkIG9mIHRoZSB3ZWF0aGVyIHRoaXMgc3VtbWVyZGQCBA9kFgICAQ8PFgQfAwVFLy93d3cudGhld2VhdGhlcm91dGxvb2suY29tL3dlYXRoZXItbmV3cy82NjA4L3ZvaWNlLWNvbnRyb2wtYXZhaWxhYmxlHwAFF1ZvaWNlIGNvbnRyb2wgYXZhaWxhYmxlZGQCBQ8PZA8QFgFmFgEWAh8FZRYBZmRkAgYPD2QPEBYHZgIBAgICAwIEAgUCBhYHFgIfBWQWAh8FZBYCHwVkFgIfBWQWAh8FZBYCHwVkFgIfBWQWBwIDAgMCAwIDAgMCAwIDZGQYAgUhY3RsMDAkY3BCb2R5TWFpbiRsdk1hc3RlciRmMTZkcDExDxQrAARkAggCCAIQZAUZY3RsMDAkY3BCb2R5TWFpbiRsdk1hc3Rlcg8UKwAOZGRkZGRkZDwrAAgAAhBkZGQCCAIIZD71tCHqqfy37B+DElXq3E7E8329" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="592F3515" />
+</div>
+
+
+<div id="headerhp" class="container">
+<div class="row">
+
+<style>
+.switch{position:relative;display:inline-block;width:50px;height:30px}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s}.slider:before{position:absolute;content:"";height:22px;width:22px;left:4px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s}input:checked+.slider{background-color:#428bca}input:focus+.slider{box-shadow:0 0 1px #428bca}input:checked+.slider:before{-webkit-transform:translateX(22px);-ms-transform:translateX(22px);transform:translateX(22px)}.slider.round{border-radius:30px}.slider.round:before{border-radius:50%}.twitter-typeahead .tt-menu{margin-top:4px;padding:4px 0;background-color:#fff;border:1px solid #ccc;border-radius:4px;box-shadow:0 5px 10px rgba(0,0,0,.2);max-width:90vw;min-width:350px;max-height:350px;overflow-y:auto}.twitter-typeahead .tt-suggestion{padding:8px 12px;font-size:18px;line-height:1.5;cursor:pointer}.twitter-typeahead .tt-suggestion:hover{background-color:#f1f1f1}.twitter-typeahead .tt-suggestion:focus{background-color:#f1f1f1;outline:none}.tt-header{padding-left:2px;background-color:#f0f0f0;font-size:20px;color:#428bca}@media(max-width:991px){#fp16m-wrap{margin-left:-10px;margin-right:-10px}.offset-up{margin-top:-15px;margin-bottom:15px !important}}@media(min-width:992px){.top-buffer-sm{margin-top:10px !important}}#ulhead{padding:0 !important;margin-top:0 !important;margin-bottom:0 !important;display:flex !important;list-style:none !important;background-color:#428bca !important}#ulhead li{align-items:center !important;height:66px !important;color:#0a547c !important;text-align:center !important;border-left:1px solid #357ebd !important;border-bottom:1px solid #357ebd !important;flex-basis:0 !important;flex-grow:1 !important}#ulhead>li>a,#ulhead>li>span{width:20% !important;height:66px !important;text-align:center !important;display:table-cell !important;vertical-align:middle !important;color:#fff !important;font-size:16px !important;padding:0 2px 0 2px !important;font-weight:normal !important}small{font-size:85% !important}
+</style>
+<div class="container-fluid">
+<!--****************************Menu small screen*************************-->
+<nav class="navbar navbar-default" role="navigation" style="background-color: white; border: none">
+<div class="navbar-inverse navbar-header">
+<div id="nav-header-xs" class="navbar-toggle" style="float: none !important;">
+<div style="float: left">
+<a href="//www.theweatheroutlook.com">
+<img src="https://www.theweatheroutlook.com/images/site/two_xs_logo.png" alt="TheWeatherOutlook small logo" height="66" width="90" />
+</a>
+</div>
+<ul id="ulhead">
+<li>
+<a href="//www.theweatheroutlook.com/twodata/uk-rainfall-radar.aspx">Radar
+</a>
+</li>
+<li>
+<a href="//www.theweatheroutlook.com/twoother/latest.aspx">Buzz
+</a>
+</li>
+
+<li><a href="https://www.theweatheroutlook.com/twousers/user.aspx">
+<span class="glyphicon glyphicon-user"></span>
+</a>
+</li>
+<li>
+<a href="#" id="two-favs-mob-toggle">
+<span class="glyphicon glyphicon-option-horizontal"></span>
+</a>
+</li>
+<li id="liall-mob">
+<span id="mob-all" class="glyphicon glyphicon-menu-hamburger"></span>
+</li>
+</ul>
+<div class="clearfix"></div>
+<div class="text-yellow pull-left" style="padding-left: 5px; background-color: #428bca;">
+<small>theweatheroutlook</small>
+</div>
+<div class="pull-right" style="padding-right: 10px;" onclick="setForecastBar()">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" id="fbeye" class="bi bi-eye-fill" viewBox="0 0 16 16">
+<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+<path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+</svg>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+<div class="hidden-xs pull-right nav navbar2 navbar-default2" id="hdpanel">
+<div class="panel-heading2">
+<label class="btn" id="lisearch"><a href="https://www.theweatheroutlook.com/twousers/user.aspx"><span class="glyphicon glyphicon-user"></span>Member</a></label>
+<a href="//www.theweatheroutlook.com/twoforecasts/all-weather-forecast-locations.aspx" id="sgra4" type="button" class="btn">Locations</a>
+</div>
+</div>
+<div class="navbar-collapse collapse">
+<div class="hidden-xs nav navbar-nav">
+<div>
+<a href="//www.theweatheroutlook.com">
+<img alt="TheWeatherOutlook logo" class="img-responsive" height="72" width="91" style="padding-top: 10px"
+src="https://www.theweatheroutlook.com/images/site/two_logo_dt.png" />
+</a>
+</div>
+
+<div style="font-size:18px">
+<strong>theweatheroutlook</strong>
+</div>
+
+</div>
+<p class="hidden-xs" style="padding-top: 60px"></p>
+<div class="nav navbar-nav navbar-right" id="navbar-collapse-main">
+<ul class="nav navbar-nav navbar-default hidden-xs">
+<li id="litwo" class="active"><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>&nbsp;FAV<span class="hidden-sm">OURITES</span></a></li>
+<li id="liforecasts"><a href="#"><i class="glyphicon glyphicon-picture"></i>&nbsp;FORECASTS</a></li>
+<li id="lihobby"><a href="#"><i class="glyphicon glyphicon-plane"></i>&nbsp;HOBBIES</a></li>
+<li id="lidata"><a href="#"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;DATA</a></li>
+<li id="two-favs-toggle" class="btn-warning2"><a href="#"><i id="dt-two-favs-toggle" class="glyphicon glyphicon-option-horizontal" style="color: #f0ad4e"></i></a></li>
+<li id="liall"><a href="#"><i id="dt-all" class="glyphicon glyphicon-menu-hamburger" style="color: #f0ad4e"></i>&nbsp;ALL</a></li>
+</ul>
+</div>
+</div>
+<div id="two-favs-mob" class="hidden">
+<h4><strong>QUICK LINKS</strong></h4>
+<div>
+<div class="panel-group">
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/forecast/14-day-uk-weather-forecast">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-book"></div>
+<div>14 day UK</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/forecast/30-day-uk-weather-forecast">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-book"></div>
+<div>The month ahead</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/forecast/uk-seasonal-weather-forecast">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-book"></div>
+<div>Seasonal outlook</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twoother/latest.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-book"></div>
+<div>Buzz</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twoforecasts/17-to-30-day-outlook.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-list"></div>
+<div>LRF 17 to 30</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twoforecasts/daily-ultra-long-range.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-list"></div>
+<div>LRF 30 to 150</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twodata/uk-rainfall-radar.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>Radar</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twodata/uk-weather-archive-map.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>UK Obs map</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twodata/model-inventory.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>Model inventory</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twodata/gfs.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>Models</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twoforecasts/forcentreuk.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>7 day map</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-picture"></div>
+<div>EUMETSAT</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/weather/will-it-snow">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-list"></div>
+<div>Will it snow?</div>
+</div>
+</a>
+</div>
+<div class="col-xs-6">
+<a href="//www.theweatheroutlook.com/twocommunity/default.aspx">
+<div class="panel panel-default">
+<div class="glyphicon glyphicon-home"></div>
+<div>Forum</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="hidden-xs" id="two-quick-links-dt" style="height: 42px">
+<ul id="mntwo" class="nav nav-justified navbar-default hidden">
+<li id="mnu2"><a title="TheWeatherOutlook homepage" href="//www.theweatheroutlook.com"><i class="glyphicon glyphicon-home"></i>&nbsp;</a></li>
+<li id="mnu10"><a title="Rainfall radar" href="//www.theweatheroutlook.com/twodata/uk-rainfall-radar.aspx"><span class="hidden-sm">Rain</span> Radar</a></li>
+<li id="mnu50"><a title="View computer model charts and data" href="//www.theweatheroutlook.com/twodata/model-inventory.aspx">Models</a></li>
+<li id="mnu280"><a title="Long range weather forecast" href="//www.theweatheroutlook.com/twoforecasts/17-to-30-day-outlook.aspx">30 day</a></li>
+<li id="mnu285"><a title="Ultra Long range weather forecast" href="//www.theweatheroutlook.com/twoforecasts/daily-ultra-long-range.aspx">150 day</a></li>
+<li id="mnu287"><a href="//www.theweatheroutlook.com/twoother/latest.aspx">Buzz</a></li>
+<li><a href="//www.theweatheroutlook.com/twocommunity/default.aspx">Forum</a></li>
+</ul>
+<ul id="mnforecasts" class="nav nav-justified navbar-default hidden">
+<li id="mnu230"><a title="3 hours ahead forecast chart" href="//www.theweatheroutlook.com/twoforecasts/for3hours.aspx">3 hour</a></li>
+<li id="mnu250"><a title="7 day forecast charts" href="//www.theweatheroutlook.com/twoforecasts/forcentreuk.aspx">UK map</a></li>
+<li id="mnu200"><a title="14 day discussion forecast" href="//www.theweatheroutlook.com/forecast/14-day-uk-weather-forecast">14 day</a></li>
+<li id="mnu210"><a title="Monthly discussion forecast" href="//www.theweatheroutlook.com/forecast/30-day-uk-weather-forecast">Month</a></li>
+<li id="mnu220"><a title="Seasonal discussion forecast" href="//www.theweatheroutlook.com/forecast/uk-seasonal-weather-forecast">Season</a></li>
+<li id="mnu266"><a title="16 day weather risk" href="//www.theweatheroutlook.com/twoforecasts/global-location-picker.aspx">Global</a></li>
+<li id="mnu275"><a title="Plot graphs of weather paremeters" href="//www.theweatheroutlook.com/twodata/datmdlgraph.aspx">Graph</a></li>
+</ul>
+<ul id="mnhobby" class="nav nav-justified navbar-default hidden">
+<li id="mnu436"><a title="Top days out weather forecasts" href="//www.theweatheroutlook.com/twoforecasts/top-days-out-weather.aspx">TDO weather</a></li>
+<li id="mnu430"><a title="Event planner" href="//www.theweatheroutlook.com/twoforecasts/event-planner.aspx">Events</a></li>
+<li id="mnu450"><a title="Barbecue planner" href="//www.theweatheroutlook.com/twoforecasts/barbecue-planner.aspx">Barbecue</a></li>
+<li id="mnu460"><a title="Mediterranean 7 day weather" href="//www.theweatheroutlook.com/twoforecasts/forcentreos.aspx">Mediterranean</a></li>
+</ul>
+<ul id="mndata" class="nav nav-justified navbar-default hidden">
+<li id="mnu20"><a title="Lightning strikes map" href="//www.theweatheroutlook.com/twodata/uk-lightning-strikes.aspx">Lightning <span class="hidden-sm">strikes</span></a></li>
+<li id="mnu620"><a title="Met Office Fax synoptic charts" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=fax&model=fax">Fax</a></li>
+<li id="mnu630"><a title="Historic weather reports archive map" href="//www.theweatheroutlook.com/twodata/uk-weather-archive-map.aspx">UK obs map</a></li>
+<li id="mnu670"><a title="Computer model output" href="//www.theweatheroutlook.com/twodata/datmrfcompare.aspx">Outlook models</a></li>
+<li id="mnu30"><a title="IR satellite images" href="//www.theweatheroutlook.com/twodata/uk-ir-satellite-image.aspx">Satellite</a></li>
+</ul>
+</div>
+<div id="geoloc-error" class="text-danger hidden">Unable to establish your approximate location. This may be disabled or not supported on your browser or device. </div>
+</div>
+<div id="two-all" class="hidden container-fluid">
+<div class="flex">
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<h4 class="visible-xs" id="mnu-clp-forecasts-head"><strong>FORECASTS <i class="glyphicon glyphicon glyphicon-menu-up"></i></strong></h4>
+<div id="mnu-clp-forecasts">
+<h4 class="hidden-xs"><strong>FORECASTS</strong></h4>
+<ul class="list-unstyled">
+<li>UK</li>
+<li><a title="Weather forecast videos" href="//www.theweatheroutlook.com/premium/weather-video.aspx">Videos</a></li>
+<li><a title="Today's rainfall, max and min temperatures forecast charts" href="//www.theweatheroutlook.com/twoforecasts/uk-weather-today.aspx">Today</a> | <a title="Tomorrow's rainfall, max and min temperatures forecast charts" href="//www.theweatheroutlook.com/twoforecasts/uk-weather-tomorrow.aspx">Tomorrow</a></li>
+<li><a title="Chance of snow" href="https://www.theweatheroutlook.com/weather/will-it-snow">Will it snow?</a></li>
+<li><a title="Change of rain" href="https://www.theweatheroutlook.com/weather/will-it-rain">Will it rain?</a></li>
+<li><a title="Chance of frost" href="https://www.theweatheroutlook.com/weather/will-it-frost">Will it be frosty?</a></li>
+<li><a title="Chance of heat" href="https://www.theweatheroutlook.com/weather/will-it-be-hot">Will it be hot?</a></li>
+<li><a title="Chance of thunder" href="https://www.theweatheroutlook.com/weather/will-it-thunder">Will it thunder?</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/rain-forecast-totals.aspx">Rain forecast totals</a></li>
+<li><a title="Short range UK forecast charts" href="//www.theweatheroutlook.com/twoforecasts/for3hours.aspx">3 hours ahead</a></li>
+<li><a title="Hourly weather forecast" href="//www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx">Hour by hour</a></li>
+<li><a title="7 and 10 day detailed forecast" href="//www.theweatheroutlook.com/twoforecasts/7-day-weather-forecast.aspx">7 day</a> | <a title="10 day detailed forecast" href="//www.theweatheroutlook.com/twoforecasts/10-day-weather-forecast.aspx">10 day</a> | <a title="16 day detailed forecast" href="//www.theweatheroutlook.com/twoforecasts/forregdaily.aspx">16 day</a></li>
+<li><a title="14 day discussion" href="//www.theweatheroutlook.com/forecast/14-day-uk-weather-forecast">14 day discussion</a></li>
+<li><a title="Monthly discussion" href="//www.theweatheroutlook.com/forecast/30-day-uk-weather-forecast">Monthly</a> | <a title="Seasonal discussion" href="//www.theweatheroutlook.com/forecast/uk-seasonal-weather-forecast">Seasonal</a></li>
+<li><a title="16 day UK weather risk" href="//www.theweatheroutlook.com/twoforecasts/for16day_risk.aspx">16 day UK risk</a></li>
+<li><a title="Plot graphs of weather paremeters" href="//www.theweatheroutlook.com/twodata/datmdlgraph.aspx">16 day UK graphs</a></li>
+<li><a title="Regional 17 to 30 day long range" href="//www.theweatheroutlook.com/twoforecasts/17-to-30-day-outlook.aspx">17 to 30 day</a> | <a title="Regional 30 to 150 day long range" href="//www.theweatheroutlook.com/twoforecasts/daily-ultra-long-range.aspx">30 to 150 day</a></li>
+<li><a title="7 day forecast overview" href="//www.theweatheroutlook.com/twoforecasts/forcentreuk.aspx">UK map</a></li>
+<li><a title="7 day north England overview" href="//www.theweatheroutlook.com/twoforecasts/forcentreukreg.aspx?region=ce">North England map</a></li>
+<li><a title="7 day east England overview" href="//www.theweatheroutlook.com/twoforecasts/forcentreukreg.aspx?region=se">East England map</a></li>
+<li><a title="7 day west England and Wales overview" href="//www.theweatheroutlook.com/twoforecasts/forcentreukreg.aspx?region=sw">West and Wales map</a></li>
+<li><a title="7 day Scotland overview" href="//www.theweatheroutlook.com/twoforecasts/forcentreukreg.aspx?region=sc">Scotland map</a></li>
+<li><a title="Compare forecast for your location" href="//www.theweatheroutlook.com/twoforecasts/forecast-temperature-anomalies.aspx">Temperature anomalies</a></li>
+<li><a title="UK A to Z location list and autosuggest" href="//www.theweatheroutlook.com/twoforecasts/all-weather-forecast-locations.aspx">UK A to Z</a></li>
+<li><a title="Sunrise, sunset" href="//www.theweatheroutlook.com/sun/">Sun times</a></li>
+<li><a title="Moonrise, moonset, moon phase" href="//www.theweatheroutlook.com/moon/">Moon times</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>GLOBAL</li>
+<li><a title="Global tourist destinations" href="//www.theweatheroutlook.com/twoforecasts/top-holiday-destinations.aspx">Top 25 destinations</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/top-mediterranean-destinations.aspx">Top Med destinations</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/forwizard.aspx">Holiday locations</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/forcentreos.aspx">Mediterranean 7 day overview</a></li>
+<li><a title="Global location picker" href="//www.theweatheroutlook.com/twoforecasts/global-location-picker.aspx">16 day</a> | <a title="Select 16 day global forecast location from map" href="//www.theweatheroutlook.com/twoforecasts/global-forecast-map.aspx">16 day map</a></li>
+<li><a title="UK and European locations" href="//www.theweatheroutlook.com/twoforecasts/ensemble-forecast.aspx">Probability</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<h4 class="visible-xs" id="mnu-clp-hobbies-head"><strong>HOBBIES <i class="glyphicon glyphicon glyphicon-menu-down"></i></strong></h4>
+<div id="mnu-clp-hobbies" class="hidden-xs">
+<h4 class="hidden-xs"><strong>HOBBIES</strong></h4>
+<ul class="list-unstyled">
+<li>GENERAL</li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/top-days-out-weather.aspx">Top days out</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/event-planner.aspx">Event calendar</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/barbecue-planner.aspx">Barbecue planner</a></li>
+<li><a title="Cloud and atmospheric forecasts" href="//www.theweatheroutlook.com/twoforecasts/Astronomy%20weather%20forecasts.aspx">Astronomy</a></li>
+<li><a title="Wedding weather planner" href="//www.theweatheroutlook.com/twoforecasts/wedding-planner.aspx">Wedding weather</a></li>
+<li><a title="Gardening forecast" href="//www.theweatheroutlook.com/twoforecasts/forindex.aspx?type=gardening">Gardening</a></li>
+<li><a title="Walking forecast" href="//www.theweatheroutlook.com/twoforecasts/forindex.aspx?type=walking">Walking</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/uk-airport-weather.aspx">UK airports</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>SPORTS</li>
+<li><a title="Winter sports resorts weather forecasts" href="//www.theweatheroutlook.com/twoforecasts/ski-and-snowboard-weather.aspx">16 day ski</a></li>
+<li><a title="Winter sports resorts weather risk forecasts" href="//www.theweatheroutlook.com/twoforecasts/winter-sports-weather-risk.aspx">16 day risk ski</a></li>
+<li><a title="Golf forecast" href="//www.theweatheroutlook.com/twoforecasts/forindex.aspx?type=golf">Golf index</a></li>
+<li><a title="Fishing forecast" href="//www.theweatheroutlook.com/twoforecasts/forindex.aspx?type=fishing">Fishing index</a></li>
+<li><a title="Cricket forecast" href="//www.theweatheroutlook.com/twoforecasts/forindex.aspx?type=cricket">Cricket index</a></li>
+<li><a title="First class grounds" href="//www.theweatheroutlook.com/twoforecasts/cricket-grounds.aspx">Cricket venues</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>USER WEATHER PICS</li>
+<li><a href="//www.theweatheroutlook.com/photo-uploader.aspx">Sky Eye Upload Photos</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/sky-eye-gallery.aspx">Weather picture gallery</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/sky-eye-live.aspx">Sky Eye Live </a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<h4 class="visible-xs" id="mnu-clp-data-head"><strong>DATA <i class="glyphicon glyphicon glyphicon-menu-down"></i></strong></h4>
+<div id="mnu-clp-data" class="hidden-xs">
+<h4 class="hidden-xs"><strong>DATA</strong></h4>
+<ul class="list-unstyled">
+<li>LATEST</li>
+<li><a href="//www.theweatheroutlook.com/twodata/uk-rainfall-radar.aspx">Rain and lightning radar</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/uk-lightning-strikes.aspx">Lightning strikes</a></li>
+<li><a title="IR satellite images" href="//www.theweatheroutlook.com/twodata/uk-ir-satellite-image.aspx">UK Satellite</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx">EUMETSAT Vis</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx?view=ir">EUMETSAT IR</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx?view=snow">EUMETSAT Snow</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx?view=airmass">EUMETSAT Airmass</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/eumetsat.aspx?view=fog">EUMETSAT Fog</a></li>
+<li><a title="Natural colours" href="//www.theweatheroutlook.com/twodata/eumetsat.aspx?view=nc">EUMETSAT NC</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/daily-temperature-charts.aspx">1981 - 2010 mean temp charts</a></li>
+<li><a title="Comparisons go back to 1948" href="//www.theweatheroutlook.com/premium/weather-analogues.aspx">Analogues</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>COMPUTER MODEL CHARTS</li>
+<li><a title="Model status and launcher" href="//www.theweatheroutlook.com/twodata/model-inventory.aspx">Model inventory</a></li>
+<li><a title="Multi model viewer" href="//www.theweatheroutlook.com/twodata/datmdlout.aspx">Chart viewer</a></li>
+<li><a title="Meteo France medium range charts" href="//www.theweatheroutlook.com/twodata/arpege.aspx">Arpege</a> | <a title="Meteo France Arome 0.01 degree short range charts" href="//www.theweatheroutlook.com/twodata/arome.aspx">Arome</a></li>
+<li><a title="Medium range charts" href="//www.theweatheroutlook.com/twodata/ecmwf.aspx">ECMWF</a> | <a title="ECMWF Ensemble charts" href="//www.theweatheroutlook.com/twodata/ecmwfens.aspx">ECMWF ENS</a></li>
+<li><a title="Medium range charts" href="//www.theweatheroutlook.com/twodata/gem.aspx">CMC GEM</a></li>
+<li><a title="GEFS ensemble medium range charts" href="//www.theweatheroutlook.com/twodata/gefs.aspx">GEFS</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/gefs-stamps.aspx">GEFS postage stamps</a></li>
+<li><a title="Plot GEFS graphs" href="//www.theweatheroutlook.com/premium/gefs-graphs.aspx">GEFS custom graphs</a></li>
+<li><a title="Create GEFS data tables" href="//www.theweatheroutlook.com/premium/gefs-tables.aspx">GEFS custom data tables</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/gefs-35-day.aspx">GEFS 35 day</a></li>
+<li><a href="//www.theweatheroutlook.com/twoforecasts/gefs-europe.aspx">GEFS Europe</a></li>
+<li><a title="GFS medium range charts" href="//www.theweatheroutlook.com/twodata/gfs.aspx">GFS</a></li>
+<li><a title="DWD ICON EU charts" href="//www.theweatheroutlook.com/twodata/icon.aspx">ICON EU</a> | <a title="DWD ICON Global" href="//www.theweatheroutlook.com/twodata/icon-global.aspx">ICON G</a></li>
+<li><a title="Medium range charts" href="//www.theweatheroutlook.com/twodata/ukmet.aspx">UK Met Office G</a></li>
+<li><a title="Medium range UK charts" href="//www.theweatheroutlook.com/twodata/ukmetuk.aspx">UK Met Office UK</a></li>
+<li><a title="High resolution model charts" href="//www.theweatheroutlook.com/twodata/ukv.aspx">UKV</a></li>
+<li><a title="UK Met Office ensemble" href="//www.theweatheroutlook.com/twodata/mogreps.aspx">MOGREPS-G</a></li>
+<li><a title="UK Met Office ensemble custom graphs" href="//www.theweatheroutlook.com/premium/mogreps-graphs.aspx">MOGREPS-G custom</a></li>
+<li><a title="Climate Forecast System v2 seasonal charts" href="//www.theweatheroutlook.com/twodata/cfs.aspx">CFS v2</a></li>
+<li><a title="UK Met Office synoptic charts" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=fax&model=fax">Fax</a></li>
+<li><a title="Live chart preview" href="//www.theweatheroutlook.com/twodata/datmrfcompare.aspx">Model launcher</a></li>
+<li><a title="GFS based" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=jetstream&model=gfs">Jet stream charts</a></li>
+<li><a title="GFS based" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=snow&model=gfs">Snow</a> | <a title="Snow forecast charts ENSEMBLE" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=snow&model=gefs">Snow ensemble</a></li>
+<li><a title="Snow row latest and archive" href="//www.theweatheroutlook.com/twodata/snowrow.aspx">Snow row</a></li>
+<li><a title="Stratosphere temperature and zonal wind forecasts" href="https://www.theweatheroutlook.com/atmosphere/stratosphere">Stratosphere forecasts</a></li>
+<li><a title="CAPE and LI charts" href="//www.theweatheroutlook.com/twodata/datukgfshires.aspx?display=thunderstorm&model=gfs">Thunderstorm</a></li>
+<li><a title="European GEFS plots" href="//www.theweatheroutlook.com/twodata/gefs-map-selector.aspx">GEFS Europe map</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/weather-chart-help.aspx">Model and chart help</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<h4 class="visible-xs" id="mnu-clp-two-head"><strong>TWO <i class="glyphicon glyphicon glyphicon-menu-down"></i></strong></h4>
+<div id="mnu-clp-two" class="hidden-xs">
+<h4 class="hidden-xs"><strong>TWO</strong></h4>
+<ul class="list-unstyled">
+<li>MEMBER</li>
+<li><a title="Member login" href="//www.theweatheroutlook.com/twousers/user.aspx"><i class="glyphicon glyphicon-user"></i>&nbsp;Login</a></li>
+<li><a title="UKV zoom charts and forecast map" href="https://www.theweatheroutlook.com/twodata/model-zoom.aspx?model=ukv">UKV zoom</a></li>
+<li><a href="https://www.theweatheroutlook.com/twodata/model-charts.aspx">UKV custom charts</a></li>
+<li><a href="https://www.theweatheroutlook.com/twodata/ukv_region.aspx">UKV regional charts</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>OTHER</li>
+<li><a href="//www.theweatheroutlook.com/twoother/web-app.aspx">TWO apps</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/search.aspx">Search</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/twositemap.aspx">Sitemap</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/twofeedback.aspx">Contact Us</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>CONTENT</li>
+<li><a title="NCEP reanalysis" href="//www.theweatheroutlook.com/twodata/reanalysis.aspx">Historic charts</a></li>
+<li><a title="News and views from Brian Gaze" href="//www.theweatheroutlook.com/twoother/latest.aspx">Buzz</a></li>
+<li><a title="Articles discussing the weather" href="//www.theweatheroutlook.com/twoother/Weather%20library.aspx">Library</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/Press%20releases.aspx">Press releases</a></li>
+
+
+<li><a href="//www.theweatheroutlook.com/twoother/twocontent.aspx?type=tystat">Historic statistics</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>WEATHER REPORTS</li>
+<li><a title="Map showing current conditions" href="//www.theweatheroutlook.com/twodata/uk-weather-archive-map.aspx">UK obs map</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/uk-weather-now.aspx">UK metar reports</a></li>
+<li><a href="//www.theweatheroutlook.com/twodata/uk-weather-now-map.aspx">UK metar reports map</a></li>
+<li class="hidden-xs">
+<hr />
+</li>
+<li>SERVICES</li>
+<li><a title="Add a free weather forecast to your website" href="//www.theweatheroutlook.com/twoforecasts/weather-widget.aspx">Create forecast widget</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/twobusiness.aspx">Commercial services</a></li>
+<li><a href="//www.theweatheroutlook.com/twoother/othlinktous.aspx">Link to us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="fpwrap" class="hidden">
+<div id="speech-info" style="background-color: black; color: white" class="hidden"><small>e.g. Say weather for London or weather for postcode w1</small></div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="hidden-print bottom-buffer top-buffer" id="tt-mo">
+<div id="fprappc" style="border: solid #428bca 1px;">
+<div style="width: 75%" class="pull-left">
+<input type="text" style="padding: 20px 6px 20px 6px; font-size: 18px; border: none; box-shadow: none" class="form-control typeahead"
+autocomplete="off" autocorrect="off" name="query"
+title="If entering a postcode only use the first part of it, e.g. if the postcode is W1 5BU enter W1. You can enter the full postcode but
+the space must be in the right place (W1 5BU would be ok, W15BU would NOT be ok). Using the auto suggest is recommended."
+onfocus="toggleElementVisibility('show','fprappc-mob')" id="fptbpc" />
+</div>
+<div style="width: 25%" class="pull-right">
+<div class="pull-right" id="mygeo" style="height:42px; padding: 5px 5px 5px 5px; cursor: pointer; background-color:#428BCA">
+<svg xmlns="http://www.w3.org/2000/svg" id="fp16me" onclick="getLocation('fc');" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
+<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+</div>
+<div class="pull-right" style="height: 30px; padding: 5px 5px 5px 5px; cursor: pointer">
+<svg id="fp16m" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="grey" class="bi bi-search" viewBox="0 0 16 16">
+<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+</svg>
+<svg id="fp3m" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="grey" class="bi bi-search hidden" viewBox="0 0 16 16">
+<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+</svg>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<i id="tt-cl3" class="pop-error-small"></i>
+<div style="display: flex; align-items: center;">
+<label class="switch">
+<input type="checkbox" id="fprange" onclick="setforrange()" name="forrange" checked="checked" value="16"><span class="slider round"></span>
+</label>
+<span id="flab"><strong>16 day</strong></span>
+<button id="fp7m" type="button" class="btn btn-link btn-lg">7 day</button>
+<button id="fp10m" type="button" class="btn btn-link btn-lg">10 day</button>
+<button id="fpwibh" type="button" class="btn btn-link btn-lg hidden-xs">Will it be hot</button>
+<button id="fpwit" type="button" class="btn btn-link btn-lg hidden-xs hidden-sm">Will it thunder</button>
+<button id="fpwir" type="button" class="btn btn-link btn-lg hidden-xs">Will it rain</button>
+<div style="margin-left: auto; cursor: pointer">
+<svg style="margin-left: 2px" xmlns="http://www.w3.org/2000/svg" onclick="setSpeech('y')" width="30" height="30" id="fbmic" fill="grey" class="bi bi-mic-mute hidden" viewBox="0 0 16 16">
+<path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879l-1-1V3a2 2 0 0 0-3.997-.118l-.845-.845A3.001 3.001 0 0 1 11 3z" />
+<path d="m9.486 10.607-.748-.748A2 2 0 0 1 6 8v-.878l-1-1V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z" />
+</svg>
+<svg style="margin-left: 2px" xmlns="http://www.w3.org/2000/svg" onclick="setSpeech('y')" width="30" height="30" id="fbmicon" fill="green" class="bi bi-mic hidden" viewBox="0 0 16 16">
+<path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+<path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+</svg>
+</div>
+<div id="fp16mel" style="margin-left: 2px" class="btn btn-sm btn-default round-corners-sm" onclick="toggleElementVisibility('show','fp-options')" role="button"><i class="glyphicon glyphicon-triangle-bottom"></i><span class="hidden-xs hidden-sm" style="padding-left:5px">More</span></div>
+</div>
+</div>
+</div>
+<script>function setforrange(){var t,i,n;document.querySelector('input[name="forrange"]:checked')?(document.getElementById("flab").innerHTML="<strong>16 day<\/strong>",t=document.getElementById("fp3m"),t.classList.add("hidden"),i=document.getElementById("fp16m"),i.classList.remove("hidden"),n=document.getElementById("fp3me"),n.setAttribute("onclick","getLocation('fc')"),localStorage.setItem("eid","fp16me"),localStorage.setItem("ftype","fc")):(document.getElementById("flab").innerHTML="<strong>Hourly<\/strong>",t=document.getElementById("fp3m"),t.classList.remove("hidden"),i=document.getElementById("fp16m"),i.classList.add("hidden"),n=document.getElementById("fp16me"),n.setAttribute("id","fp3me"),n.setAttribute("onclick","getLocation('f3')"),localStorage.setItem("eid","fp3me"),localStorage.setItem("ftype","f3"),document.innerHTML=document.innerHTML)}var eid=localStorage.getItem("eid"),ftype=localStorage.getItem("ftype"),forrangeRadio,el3,el16,element2;eid&&ftype&&(eid=="fp16me"?(document.getElementById("flab").innerHTML="<strong>16 day<\/strong>",forrangeRadio=document.querySelector('input[name="forrange"]'),forrangeRadio.checked=!0):(document.getElementById("flab").innerHTML="<strong>Hourly<\/strong>",forrangeRadio=document.querySelector('input[name="forrange"]'),forrangeRadio.checked=!1,el3=document.getElementById("fp3m"),el3.classList.remove("hidden"),el16=document.getElementById("fp16m"),el16.classList.add("hidden"),element2=document.getElementById("fp16me"),element2.setAttribute("id","fp3me"),element2.setAttribute("onclick","getLocation('f3')"),document.innerHTML=document.innerHTML))</script><div class=clearfix></div><div id=fp-options class="hidden container-fluid"><div class="nav navbar-default" style="background-color: #f5f5f5 !important;"><div class="col-xs-12 col-sm-6"><ul class=list-unstyled id=rf-locs><li><h3>Recent searches or often requested</h3></li></ul></div><div class="col-xs-12 col-sm-6" style="cursor: pointer"><h3>Single day forecasts</h3><a id=fpd1m class=dropdown-item title="Daily weather forecast">Wed</a> | <a id=fpd2m class=dropdown-item title="Daily weather forecast">Thu</a> | <a id=fpd3m class=dropdown-item title="Daily weather forecast">Fri</a> | <a id=fpd4m class=dropdown-item title="Daily weather forecast">Sat</a> | <a id=fpd5m class=dropdown-item title="Daily weather forecast">Sun</a> | <a id=fpd6m class=dropdown-item title="Daily weather forecast">Mon</a> | <a id=fpd7m class=dropdown-item title="Daily weather forecast">Tue</a> <h3>Specialist forecasts</h3><a id=fp16tab class=dropdown-item title="16 day weather forecast in alternative format" role=button>Table</a> | <a id=fptline class=dropdown-item title="Timeline format">Timeline</a> | <a id=fprisk class=dropdown-item title="Risk of snow, heavy rain, strong winds and frost">Risk</a> | <a id=fpgraph class=dropdown-item title="Plot graphs of weather forecast variables">Graphs</a> | <a id=fpastro class=dropdown-item title="Astronomy weather forecast">Astro</a> | <a class=dropdown-item id=fpcrick title="Weather cricket index">Cricket</a> | <a class=dropdown-item id=fpgolf title="Weather golf index">Golf</a> | <a class=dropdown-item id=fpfish title="Weather fishing index">Fishing</a> | <a class=dropdown-item id=fpbarb title="Weather barbecue index">Barbecue</a> | <a class=dropdown-item id=fpgard title="Weather walking index">Garden</a> <h3>Request new location</h3><div class=bottom-buffer><a href=https://www.theweatheroutlook.com/twoother/twofeedback.aspx>Contact Us</a></div></div><div class="row top-buffer"><div class=col-xs-12><div class="text-white text-center" style="cursor: pointer; background-color: #3071a9" onclick='toggleElementVisibility("hide","fp-options")'><span style="padding: 10px 0 10px 10px; font-weight: bold" class="glyphicon glyphicon-menu-up"></span></div><div class=clearfix></div></div></div></div></div><input type="hidden" name="ctl00$Header1$fprun" id="fprun" /><script>function setForecastBar(){var n=document.getElementById("fbeye").getAttribute("fill");n=="green"?(localStorage.setItem("forecast_bar","false"),document.getElementById("fpwrap").classList.add("hidden"),document.getElementById("fbeye").setAttribute("fill","red")):(localStorage.setItem("forecast_bar","true"),document.getElementById("fpwrap").classList.remove("hidden"),document.getElementById("fbeye").setAttribute("fill","green"))}function setSpeech(n){n=="y"&&(isRecognitionOn=!isRecognitionOn);isRecognitionOn&&"speechSynthesis"in window&&("webkitSpeechRecognition"in window||"SpeechRecognition"in window)?(document.getElementById("speech-info").classList.remove("hidden"),document.getElementById("fbmic").classList.toggle("hidden"),document.getElementById("fbmicon").classList.toggle("hidden"),recognition.lang="en-GB",recognition.interimResults=!1,recognition.maxAlternatives=1,recognition.addEventListener("result",n=>{var r,u,f,h,c;const l=n.results[0][0].transcript,e="https://www.theweatheroutlook.com/weather-news/6608/voice-control-available",i=l.split(/\W+/);if(i.includes("pause")&&recognition.stop(),(i.includes("home")||i.includes("homepage"))&&window.open("https://www.theweatheroutlook.com","_self"),i.includes("radar")&&window.open("https://www.theweatheroutlook.com/twodata/uk-rainfall-radar.aspx","_self"),i.includes("buzz")&&window.open("https://www.theweatheroutlook.com/twoother/latest.aspx","_self"),i.includes("models")&&window.open("https://www.theweatheroutlook.com/twodata/model-inventory.aspx","_self"),r=decodeURIComponent(document.getElementById("fptbpc").value.replace(/\+/g," ")),i.includes("hot")&&(document.location=typeof fptbpc.value=="undefined"||fptbpc.value===""?baseurl+"/weather/will-it-be-hot/":baseurl+"/weather/will-it-be-hot/"+r),i.includes("thunder")&&(document.location=typeof fptbpc.value=="undefined"||fptbpc.value===""?baseurl+"/weather/will-it-thunder/":baseurl+"/weather/will-it-thunder/"+r),i.includes("rain")&&(document.location=typeof fptbpc.value=="undefined"||fptbpc.value===""?baseurl+"/weather/will-it-rain/":baseurl+"/weather/will-it-rain/"+r),i.includes("snow")&&(document.location=typeof fptbpc.value=="undefined"||fptbpc.value===""?baseurl+"/weather/will-it-snow/":baseurl+"/weather/will-it-snow/"+r),(i.includes("frost")||i.includes("frosty"))&&(document.location=typeof fptbpc.value=="undefined"||fptbpc.value===""?baseurl+"/weather/will-it-frost/":baseurl+"/weather/will-it-frost/"+r),i.includes("weather")){if(u=!1,i.includes("hourly")){i.includes("my")&&getLocation("f3");u=!0;const n=i.indexOf("hourly");i.splice(n,1)}i.includes("my")&&getLocation("fc");var o="",s="true",v=i.length,t=i.slice(2),a="uk";if(t=t.length===1?t[0].toString():t.join(" "),t.includes("postcode")&&(t=t.replace("postcode",""),t=String(t.replace("for","4")).trim(),t=t.split(" "),t=t[0].slice(0)),t.includes("international")){s="false";a="";const n=["China","India","United States","Indonesia","Pakistan","Brazil","Nigeria","Bangladesh","Russia","Mexico","Japan","Ethiopia","Philippines","Egypt","Vietnam","DR Congo","Iran","Turkey","Germany","Thailand","United Kingdom","France","Italy","Tanzania","South Africa","Myanmar","Kenya","South Korea","Colombia","Spain","Uganda","Argentina","Algeria","Sudan","Ukraine","Iraq","Afghanistan","Poland","Canada","Morocco","Uzbekistan","Saudi Arabia","Malaysia","Peru","Venezuela","Uganda","Nepal","Ghana","Yemen","Mozambique","Madagascar","North Korea","Australia","Cameroon","Taiwan","Ivory Coast","Niger","Sri Lanka","Romania","Burkina Faso","Syria","Mali","Chile","Malawi","Kazakhstan","Zambia","Netherlands","Guatemala","Ecuador","Senegal","Cambodia","Chad","Somalia","Zimbabwe","Guinea","Rwanda","Benin","Tunisia","Belgium","Bolivia","Cuba","Haiti","South Sudan","Dominican Republic","Czech Republic","Greece","Jordan","Portugal","Azerbaijan"].map(n=>n.toLowerCase());o=n.find(n=>String(t).toLowerCase().includes(n))}if(f="https://www.theweatheroutlook.com/",s=="true")h=f+"/twofeeds/locations.aspx?prefixText="+t+"&count=1&contextKey=uk",fetch(h).then(n=>n.json()).then(n=>{n.length>0&&(u==!0?window.open("https://www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx?loc="+String(n[0]).toLowerCase(),"_self"):window.open("https://www.theweatheroutlook.com/forecast/uk/"+String(n[0]).toLowerCase(),"_self"))}).catch(()=>{window.open(e,"_self")});else{t=t.replace("international","");t=String(t).trim().toLowerCase();const[n]=t.split(" ");t=n;t.length>8&&(t=t.substring(0,8));c=f+"/twofeeds/globallocations.aspx?prefixText="+t+"&count=1&contextKey=global";fetch(c).then(n=>n.json()).then(n=>{var t,i;for(let i=0;i<n.length;i++)String(n[i]).toLowerCase().includes(o)&&(t=n[i].split(" "));i={location:t.slice(0,-2).join(" "),lat:Math.round(parseFloat(t[t.length-2].split(":")[1])),lon:Math.round(parseFloat(t[t.length-1].split(":")[1]))};window.open("https://www.theweatheroutlook.com/twoforecasts/forregdaily.aspx?lat_5="+i.lat+"&lon_5="+i.lon+"&loc=int&name="+i.location,"_self")}).catch(()=>{window.open(e,"_self")})}}}),recognition.start(),isRecognitionOn=!0):(recognition.stop(),isRecognitionOn=!1)}var myLocArr=localStorage.getItem("myLocArr"),myLocLen,i,newLI,new16href,newhourhref,h4,recognition,isRecognitionOn;for(myLocArr=myLocArr?JSON.parse(myLocArr):[],myLocLen=myLocArr.length,(myLocLen<8||myLocArr[6]==null)&&myLocArr.push("London"),(myLocLen<7||myLocArr[5])&&myLocArr.push("Birmingham"),myLocLen<6&&myLocArr.push("Belfast"),myLocLen<5&&myLocArr.push("Cardiff"),myLocLen<4&&myLocArr.push("Edinburgh"),myLocLen<3&&myLocArr.push("Glasgow"),myLocLen<2&&myLocArr.push("Leeds"),myLocLen<1&&myLocArr.push("Manchester"),myLocArr.length>7&&(myLocArr=myLocArr.slice(1,8)),i=myLocArr.length-1;i>=0;--i){var lt=/</g,gt=/>/g,ap=/'/g,ic=/"/g,ie=/<!/g,ih=/>/g,thisLoc;myLocArr[i]&&(thisLoc=myLocArr[i].replace(lt,"").replace(gt,"").replace(ap,"").replace(ic,"").replace(ie,"").replace(ih,"").split("(").join("").split(")").join(""));newLI=document.createElement("div");new16href=document.createElement("a");new16href.textContent=thisLoc;new16href.setAttribute("href","https://www.theweatheroutlook.com/forecast/uk/"+thisLoc);newhourhref=document.createElement("a");newhourhref.textContent=" [Hourly]";newhourhref.setAttribute("href","https://www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx?loc="+thisLoc);h4=document.createElement("h4");newLI.appendChild(h4);h4.appendChild(new16href);h4.appendChild(newhourhref);document.getElementById("rf-locs").appendChild(newLI)}localStorage.getItem("forecast_bar")=="false"?(document.getElementById("fpwrap").classList.add("hidden"),document.getElementById("fbeye").setAttribute("fill","red")):(document.getElementById("fpwrap").classList.remove("hidden"),document.getElementById("fbeye").setAttribute("fill","green"));recognition="webkitSpeechRecognition"in window?new webkitSpeechRecognition:null;recognition&&(document.getElementById("fbmic").classList.remove("hidden"),recognition.onend=function(){document.getElementById("fbmic").classList.toggle("hidden");document.getElementById("fbmicon").classList.toggle("hidden");document.getElementById("speech-info").classList.toggle("hidden");isRecognitionOn=!1});isRecognitionOn=!1</script>
+
+
+
+</div>
+<div class="row">
+
+</div>
+<p class="row15 hidden-xs"></p>
+  <div class="row-offcanvas row-offcanvas-right">
+<div class="row">
+
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
+
+<p class="row5 hidden-sm hidden-md hidden-lg"></p>
+<div id="ctl00_cpBodyMain_header_wrapper">
+<h1 id="loctitle">
+<img class="img-thumbnail hidden" id="geospin" height="16" width="16" src="https://www.theweatheroutlook.com/images/site/spinner.gif" />
+Barcelona
+</h1>
+<h4>
+16 day weather forecast
+</h4>
+
+
+<p class="text-muted hidden" id="geoLoc">
+
+</p>
+<p class="row10"></p>
+</div>
+<div class="top table-responsive">
+
+<table class="table table-condensed">
+<thead id="dh">
+<tr style="height: 45px">
+<th class="lead" title="Date weather forecast is for">Date</th>
+<th class="lead" title="Predominant weather conditions">Weather</th>
+<th class="lead" title="Temperature °C">Temp</th>
+<th class="lead" title="Wind direction">Wind</th>
+<th class="hidden-xs lead" title="Average Wind speed">Speed</th>
+<th class="hidden-xs lead" title="Wind gust speed">Gust</th>
+<th class="hidden-xs lead" title="Humidity %">Humidity</th>
+<th class="hidden-xs lead" title="Surface pressure mB">Pressure</th>
+<th class="hidden-xs lead" title="Daily rain total">Rain total</th>
+</tr>
+</thead>
+<tbody id="df">
+
+<tr id='tr9'>
+<td>Thu 15
+<span class="hidden-xs">Jun</span>
+<a id='9' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+28°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/south1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+6mph</span>
+</td>
+<td class="hidden-xs">
+37%
+</td>
+<td class="hidden-xs">
+1009mB
+</td>
+<td class="hidden-xs" id='rt9'>
+0.3 mm
+</td>
+</tr>
+<tr style="display: none" id='trd9'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd29'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr10'>
+<td>Fri 16
+<span class="hidden-xs">Jun</span>
+<a id='10' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+27°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/south1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">11mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+11mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+8mph</span>
+</td>
+<td class="hidden-xs">
+45%
+</td>
+<td class="hidden-xs">
+1009mB
+</td>
+<td class="hidden-xs" id='rt10'>
+0.3 mm
+</td>
+</tr>
+<tr style="display: none" id='trd10'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd210'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr11'>
+<td>Sat 17
+<span class="hidden-xs">Jun</span>
+<a id='11' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/mostcloud.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+23°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+7mph</span>
+</td>
+<td class="hidden-xs">
+52%
+</td>
+<td class="hidden-xs">
+1012mB
+</td>
+<td class="hidden-xs" id='rt11'>
+8.1 mm
+</td>
+</tr>
+<tr style="display: none" id='trd11'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd211'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr12'>
+<td>Sun 18
+<span class="hidden-xs">Jun</span>
+<a id='12' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/sunny.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+25°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+6mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+7mph</span>
+</td>
+<td class="hidden-xs">
+42%
+</td>
+<td class="hidden-xs">
+1013mB
+</td>
+<td class="hidden-xs" id='rt12'>
+2.1 mm
+</td>
+</tr>
+<tr style="display: none" id='trd12'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd212'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr13'>
+<td>Mon 19
+<span class="hidden-xs">Jun</span>
+<a id='13' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/lightrain.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+25°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/south1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">7mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+7mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+6mph</span>
+</td>
+<td class="hidden-xs">
+55%
+</td>
+<td class="hidden-xs">
+1012mB
+</td>
+<td class="hidden-xs" id='rt13'>
+9 mm
+</td>
+</tr>
+<tr style="display: none" id='trd13'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd213'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr14'>
+<td>Tue 20
+<span class="hidden-xs">Jun</span>
+<a id='14' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/lightrain.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+24°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">5mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+5mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+5mph</span>
+</td>
+<td class="hidden-xs">
+48%
+</td>
+<td class="hidden-xs">
+1013mB
+</td>
+<td class="hidden-xs" id='rt14'>
+5.7 mm
+</td>
+</tr>
+<tr style="display: none" id='trd14'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd214'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr15'>
+<td>Wed 21
+<span class="hidden-xs">Jun</span>
+<a id='15' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/sunny.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+25°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">5mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+5mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+5mph</span>
+</td>
+<td class="hidden-xs">
+47%
+</td>
+<td class="hidden-xs">
+1017mB
+</td>
+<td class="hidden-xs" id='rt15'>
+0.9 mm
+</td>
+</tr>
+<tr style="display: none" id='trd15'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd215'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+<tr id='tr16'>
+<td>Thu 22
+<span class="hidden-xs">Jun</span>
+<a id='16' href="javascript:;">
+<div class="shows">Show details</div>
+</a></td>
+<td>
+<img id="im4" src="../../Images/icons/sunny.gif" alt="Weather" style="height:30px;width:45px;border-width:0px;" />
+</td>
+<td>
+<span class="temps">
+28°C</span>
+</td>
+<td>
+<img id="im5" src="../../Images/icons/southwest1.gif" alt="Wind direction" style="height:22px;width:22px;border-width:0px;" />
+<span class="visible-xs xs-wind">3mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+3mph</span>
+</td>
+<td class="hidden-xs">
+<span class="winds">
+4mph</span>
+</td>
+<td class="hidden-xs">
+37%
+</td>
+<td class="hidden-xs">
+1016mB
+</td>
+<td class="hidden-xs" id='rt16'>
+0 mm
+</td>
+</tr>
+<tr style="display: none" id='trd16'>
+<td colspan="9"></td>
+</tr>
+                <tr style="display: none;" id='trd216'>
+                 <td colspan="9" style="background-color: rgb(204, 204, 204);">
+                        <div class="overflow-horiz-wrapper">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+</tbody>
+<tfoot>
+<tr> <td colspan="4" class="text-left">
+<button id="full-summary" type="button" class="btn btn-warning hidden-sm hidden-md hidden-lg">
+<i class="glyphicon glyphicon-resize-horizontal"></i></button>
+<a id="hl_three_day" class="btn btn-success" href="//www.theweatheroutlook.com/twoforecasts/hourly-weather-forecast.aspx?loc=barcelona">Hourly</a>
+<span id="f16dp11"><a class="btn btn-warning" href="javascript:__doPostBack(&#39;ctl00$cpBodyMain$lvMaster$f16dp11$ctl00$ctl00&#39;,&#39;&#39;)">Day 0 - 7</a>&nbsp;<a disabled="disabled" class="btn btn-warning">8 - 16</a>&nbsp;</span>
+</td>
+<td class="hidden-xs" id="units-wrapper" colspan="5">
+
+
+<div id="units" class="smbuttonsul">
+    <div  role="toolbar" class="btn-toolbar">
+
+        <div data-toggle="buttons" class="btn-group">
+
+            <label class="btn btn-default active" id="wuts_wmph">
+              mph
+            </label>
+            <label class="btn btn-default"  id="wuts_wkph" >
+               kph
+            </label>
+            <label class="btn btn-default"  id="wuts_wkts" >
+              kts
+            </label>
+               <label class="btn btn-default active" id="tuts_tc">
+                °C      
+            </label>
+            <label class="btn btn-default"  id="tuts_tf">
+                °F      
+            </label>
+         </div>
+        </div>
+    </div>
+
+
+
+</td>
+</tr>
+</tfoot>
+</table>
+
+</div>
+<div class="clearfix"></div>
+<div class="text-muted pull-left">
+Issued: 06/06 19:40
+</div>
+<div class="text-muted pull-right">
+<a href="https://www.theweatheroutlook.com/twodata/gfs.aspx?run=00">GFS 00z data</a>
+</div>
+<div class="clearfix"></div>
+
+
+<p class="row15"></p>
+<div id="ctl00_cpBodyMain_md_notification"></div>
+<div id="nofc">
+<div class="btn-group">
+<button id="sgra" type="button" onclick="dispgraph(0)" class="btn btn-warning">Show graphs</button>
+<button id="hgra" type="button" onclick="dispgraph(1)" class="btn btn-warning">Hide graphs</button>
+</div>
+
+<div id="frwsg">
+<div>
+<h2>Forecast graphs</h2>
+<div>
+<div id="gvars">
+<p>Select variable/s, graph type and plot</p>
+<div class="overflow-horiz-wrapper" data-toggle="buttons">
+<input id="tmax" checked="checked" type="checkbox" data-toggle="toggle" data-on="Max temp" data-off="Max temp" data-onstyle="success" data-offstyle="default" />
+<input id="tmin" type="checkbox" checked="checked" data-toggle="toggle" data-on="Min temp" data-off="Min temp" data-onstyle="success" data-offstyle="default" />
+<input id="sp" type="checkbox" data-toggle="toggle" data-on="Surface Pressure" data-off="Surface Pressure" data-onstyle="success" data-offstyle="default" />
+<input id="ws" type="checkbox" data-toggle="toggle" data-on="Wind speed" data-off="Wind speed" data-onstyle="success" data-offstyle="default" />
+<input id="wg" type="checkbox" data-toggle="toggle" data-on="Wind gust" data-off="Wind gust" data-onstyle="success" data-offstyle="default" />
+</div>
+<p class="clearfix"></p>
+<div class="overflow-horiz-wrapper" data-toggle="buttons">
+<input id="rt" type="checkbox" data-toggle="toggle" data-on="Rain total" data-off="Rain total" data-onstyle="success" data-offstyle="default" />
+<input id="fl" type="checkbox" data-toggle="toggle" data-on="Freezing level" data-off="Freezing level" data-onstyle="success" data-offstyle="default" />
+<input id="cc" type="checkbox" data-toggle="toggle" data-on="Cloud cover" data-off="Cloud cover" data-onstyle="success" data-offstyle="default" />
+<input id="rh" type="checkbox" data-toggle="toggle" data-on="Humidity" data-off="Humidity" data-onstyle="success" data-offstyle="default" />
+</div>
+<p class="clearfix"></p>
+<div class="overflow-horiz-wrapper" data-toggle="buttons">
+<label class="btn btn-default">
+<input class="hidden" id="gvlg" type="radio" name="gtype" />Line graph</label>
+<label class="btn btn-default">
+<input class="hidden" id="gvcc" type="radio" name="gtype" />Column chart</label>
+<label class="btn btn-default active">
+<input class="hidden" id="gvac" type="radio" checked="checked" name="gtype" />Area chart</label>
+<div class="visible-xs bottom-buffer"></div>
+<label id="btnWsfgli" class="btn btn-warning">Plot graph</label>
+</div>
+<p class="clearfix"></p>
+</div>
+</div>
+<div class="clearfix"></div>
+<div id="chart_div">
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div id="ctl00_cpBodyMain_f16info">
+<input type="hidden" name="ctl00$cpBodyMain$lbpcf_hid" id="lbpcf_hid" value="Barcelona" />
+
+
+</div>
+<div class="clearfix"></div>
+
+
+
+<input id="mnupage" value="270_forecasts" type="hidden" />
+
+
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-pull-9 col-md-pull-9 hidden-print">
+<div class="visible-sm visible-xs">
+<hr />
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+
+<div class="bottom-buffer card-box-shadow card-box bottom-buffer top-buffer card-box-padding">
+<h3 style="border-bottom: 2px solid; border-bottom-color: #ddd; padding-bottom: 5px">NEWS</h3>
+
+<a href="//www.theweatheroutlook.com/uk-weather/6657/30c-not-out-of-the-question-this-week">
+<h3>30C not out of the question this week
+<div style="padding-bottom: 45%" class="img-scj-wrapper">
+<img class="img-responsive top-buffer lazy" src="//www.theweatheroutlook.com/images/site/spacer.gif" data-srcset="//www.theweatheroutlook.com/userpics/20200616/20200616195403.jpg?w=740&h=310&mode=stretch&quality=80" />
+</div>
+</h3>
+</a>
+
+</div>
+<hr />
+<div class="bottom-buffer top-buffer text-center">
+ 
+
+<!--
+In bootstrap_ads_twocolumn_narrow.master the property isGooglePageAd is set to true by default
+If it is true the code for Google page level ads is loaded
+
+In this user control the property is set to false if Free Star ads will be loaded
+
+
+-->
+
+
+<!-- TWO Resp 3 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display: block"
+data-full-width-responsive="true"
+data-ad-client="ca-pub-1329918512489494"
+data-ad-slot="8886651462"
+data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+
+<hr />
+
+
+<p>
+<a id="ctl00_Menu1_DataList1_ctl00_hl1" href="//www.theweatheroutlook.com/weather-news/6640/glastonbury-festival-2023-weather">Glastonbury Festival 2023 weather</a>
+</p>
+
+<p>
+<a id="ctl00_Menu1_DataList1_ctl01_hl1" href="//www.theweatheroutlook.com/weather-news/6639/download-festival-2023-weather">Download Festival 2023 weather</a>
+</p>
+
+<p>
+<a id="ctl00_Menu1_DataList1_ctl02_hl1" href="//www.theweatheroutlook.com/weather-news/6635/summer-2023-second-update">Summer 2023 second update</a>
+</p>
+
+<p>
+<a id="ctl00_Menu1_DataList1_ctl03_hl1" href="//www.theweatheroutlook.com/weather-news/6620/stay-ahead-of-the-weather-this-summer">Stay ahead of the weather this summer</a>
+</p>
+
+<p>
+<a id="ctl00_Menu1_DataList1_ctl04_hl1" href="//www.theweatheroutlook.com/weather-news/6608/voice-control-available">Voice control available</a>
+</p>
+
+<div class="text-center">
+<strong>
+<a href="//www.theweatheroutlook.com/twoother/twocontent.aspx?type=hpnews">ALL ARTICLES</a>
+</strong>
+</div>
+<div class="bottom-buffer card-box-shadow card-box bottom-buffer top-buffer card-box-padding">
+<h3 style="border-bottom: 2px solid; border-bottom-color: #ddd; padding-bottom: 5px">TODAY'S WEATHER</h3>
+<img class="img-responsive" src="https://www.theweatheroutlook.com/images/maps/day1_12.png?w=288&h=300&colors=128&mode=stretch" />
+<div class="text-center">
+<a class="btn btn-warning top-buffer" href="https://www.theweatheroutlook.com/twoforecasts/forcentreuk.aspx">7 day charts </a>
+</div>
+</div>
+<div class="bottom-buffer card-box-shadow card-box bottom-buffer top-buffer card-box-padding">
+<h4 style="border-bottom: 2px solid; border-bottom-color: #ddd; padding-bottom: 5px">NEWSLETTER</h4>
+<p>Daily weather by email</p>
+<div class="text-center">
+<a href="https://www.theweatheroutlook.com/twoother/nl-signup.aspx" class="bottom-buffer btn btn-warning">Register now
+</a>
+</div>
+</div>
+<input type="hidden" name="ctl00$Menu1$hf1" id="ctl00_Menu1_hf1" />
+<input type="hidden" name="ctl00$Menu1$hf2" id="ctl00_Menu1_hf2" />
+
+
+
+</div>
+<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 ">
+
+<div class="bottom-buffer card-box-shadow card-box bottom-buffer top-buffer card-box-padding">
+<h3 style="border-bottom:2px solid; border-bottom-color:#ddd; padding-bottom:5px">UK FORECASTS</h3>
+<p>
+<a href="https://www.theweatheroutlook.com/forecast/14-day-uk-weather-forecast">14 day outlook</a>
+</p>
+<label>Updated twice weekly</label>
+<p>
+<a href="https://www.theweatheroutlook.com/forecast/30-day-uk-weather-forecast">Monthly outlook</a>
+</p>
+<label>Updated monthly</label>
+<p>
+<a href="https://www.theweatheroutlook.com/forecast/uk-seasonal-weather-forecast">Seasonal outlook</a>
+</p>
+<label>Updated every 3 months</label>
+
+</div>
+
+<div class="bottom-buffer top-buffer">
+<hr />
+ <a href="https://www.cuisinefiend.com">
+ <img class="img-responsive" alt="Cooking and baking recipes" width="300" height="250" src="https://www.theweatheroutlook.com/images/winter-recipes.jpg" />
+</a>
+    <hr />
+</div>
+
+<div>
+
+<div id="qkbtns" class="bottom-buffer card-box-shadow card-box bottom-buffer top-buffer card-box-padding">
+<h3 style="border-bottom: 2px solid; border-bottom-color: #ddd; padding-bottom: 5px">WEATHER MODELS</h3>
+<p id="pctxt">A huge range of charts and data is freely available.</p>
+<p>Models include UK Met Office UKV and MOGREPS-G, ECMWF, NCEP GFS, Meteo France Arpege and Arome.</p>
+<div class="text-center">
+<a href="https://www.theweatheroutlook.com/twodata/model-inventory.aspx" class="bottom-buffer btn btn-warning">Model inventory
+</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="bottom-buffer top-buffer text-center">
+  
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src='/Scripts/two.comb.3.24.min.js' type="text/javascript"></script>
+
+<script>
+  arr = '{"fd":"1","fh":"3","fdt":"Wed 07 JUN 2023","ha":3,"sp":"1015","cc":"20","ws":"2","wg":"4","fl":"3702","rh":"82","tmx":"18","tmi":"17","rt":"0.0","ci":"sunnyspell","wk":"southwest1","lt":"","ln":""},{"fd":"1","fh":"6","fdt":"Wed 07 JUN 2023","ha":6,"sp":"1015","cc":"100","ws":"1","wg":"2","fl":"3692","rh":"78","tmx":"19","tmi":"17","rt":"0.0","ci":"cloudy","wk":"west1","lt":"","ln":""},{"fd":"1","fh":"9","fdt":"Wed 07 JUN 2023","ha":9,"sp":"1015","cc":"100","ws":"7","wg":"9","fl":"3659","rh":"56","tmx":"22","tmi":"18","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"1","fh":"12","fdt":"Wed 07 JUN 2023","ha":12,"sp":"1014","cc":"100","ws":"12","wg":"12","fl":"3559","rh":"42","tmx":"25","tmi":"18","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"1","fh":"15","fdt":"Wed 07 JUN 2023","ha":15,"sp":"1014","cc":"100","ws":"11","wg":"13","fl":"3543","rh":"49","tmx":"25","tmi":"23","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"1","fh":"18","fdt":"Wed 07 JUN 2023","ha":18,"sp":"1014","cc":"100","ws":"7","wg":"11","fl":"3635","rh":"59","tmx":"25","tmi":"21","rt":"0.0","ci":"cloudy","wk":"southwest1","lt":"","ln":""},{"fd":"1","fh":"21","fdt":"Wed 07 JUN 2023","ha":21,"sp":"1015","cc":"98","ws":"4","wg":"6","fl":"3668","rh":"77","tmx":"21","tmi":"19","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"2","fh":"0","fdt":"Thu 08 JUN 2023","ha":24,"sp":"1014","cc":"59","ws":"3","wg":"5","fl":"3651","rh":"82","tmx":"21","tmi":"18","rt":"0.0","ci":"sunnyspell","wk":"southwest1","lt":"","ln":""},{"fd":"2","fh":"3","fdt":"Thu 08 JUN 2023","ha":27,"sp":"1013","cc":"67","ws":"3","wg":"4","fl":"3786","rh":"84","tmx":"18","tmi":"17","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"2","fh":"6","fdt":"Thu 08 JUN 2023","ha":30,"sp":"1014","cc":"87","ws":"2","wg":"4","fl":"3982","rh":"79","tmx":"18","tmi":"16","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"2","fh":"9","fdt":"Thu 08 JUN 2023","ha":33,"sp":"1013","cc":"85","ws":"7","wg":"8","fl":"3989","rh":"51","tmx":"23","tmi":"18","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"2","fh":"12","fdt":"Thu 08 JUN 2023","ha":36,"sp":"1012","cc":"73","ws":"11","wg":"10","fl":"4023","rh":"40","tmx":"26","tmi":"18","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"2","fh":"15","fdt":"Thu 08 JUN 2023","ha":39,"sp":"1011","cc":"100","ws":"12","wg":"9","fl":"4135","rh":"46","tmx":"26","tmi":"25","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"2","fh":"18","fdt":"Thu 08 JUN 2023","ha":42,"sp":"1011","cc":"96","ws":"10","wg":"10","fl":"4011","rh":"61","tmx":"26","tmi":"22","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"2","fh":"21","fdt":"Thu 08 JUN 2023","ha":45,"sp":"1012","cc":"100","ws":"5","wg":"8","fl":"4034","rh":"76","tmx":"22","tmi":"19","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"3","fh":"0","fdt":"Fri 09 JUN 2023","ha":48,"sp":"1011","cc":"100","ws":"3","wg":"5","fl":"3870","rh":"78","tmx":"22","tmi":"19","rt":"0.0","ci":"cloudy","wk":"northwest1","lt":"","ln":""},{"fd":"3","fh":"3","fdt":"Fri 09 JUN 2023","ha":51,"sp":"1010","cc":"100","ws":"4","wg":"6","fl":"3958","rh":"80","tmx":"19","tmi":"18","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"3","fh":"6","fdt":"Fri 09 JUN 2023","ha":54,"sp":"1011","cc":"100","ws":"4","wg":"7","fl":"3861","rh":"78","tmx":"19","tmi":"18","rt":"0.0","ci":"cloudy","wk":"southwest1","lt":"","ln":""},{"fd":"3","fh":"9","fdt":"Fri 09 JUN 2023","ha":57,"sp":"1010","cc":"100","ws":"6","wg":"8","fl":"3698","rh":"60","tmx":"23","tmi":"19","rt":"0.0","ci":"cloudy","wk":"southwest1","lt":"","ln":""},{"fd":"3","fh":"12","fdt":"Fri 09 JUN 2023","ha":60,"sp":"1009","cc":"64","ws":"9","wg":"11","fl":"3752","rh":"48","tmx":"27","tmi":"19","rt":"0.6","ci":"shower","wk":"southwest1","lt":"","ln":""},{"fd":"3","fh":"15","fdt":"Fri 09 JUN 2023","ha":63,"sp":"1007","cc":"6","ws":"13","wg":"15","fl":"3787","rh":"42","tmx":"30","tmi":"27","rt":"0.0","ci":"sunny","wk":"south1","lt":"","ln":""},{"fd":"3","fh":"18","fdt":"Fri 09 JUN 2023","ha":66,"sp":"1009","cc":"0","ws":"12","wg":"16","fl":"3783","rh":"54","tmx":"30","tmi":"25","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"3","fh":"21","fdt":"Fri 09 JUN 2023","ha":69,"sp":"1011","cc":"8","ws":"6","wg":"13","fl":"3624","rh":"69","tmx":"25","tmi":"21","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"4","fh":"0","fdt":"Sat 10 JUN 2023","ha":72,"sp":"1011","cc":"3","ws":"2","wg":"4","fl":"3861","rh":"69","tmx":"25","tmi":"20","rt":"0.0","ci":"sunny","wk":"west1","lt":"","ln":""},{"fd":"4","fh":"3","fdt":"Sat 10 JUN 2023","ha":75,"sp":"1011","cc":"5","ws":"4","wg":"5","fl":"3626","rh":"71","tmx":"21","tmi":"20","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"4","fh":"6","fdt":"Sat 10 JUN 2023","ha":78,"sp":"1013","cc":"5","ws":"3","wg":"4","fl":"3695","rh":"71","tmx":"21","tmi":"19","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"4","fh":"9","fdt":"Sat 10 JUN 2023","ha":81,"sp":"1013","cc":"62","ws":"4","wg":"4","fl":"3781","rh":"48","tmx":"25","tmi":"21","rt":"0.0","ci":"mostcloud","wk":"southeast1","lt":"","ln":""},{"fd":"4","fh":"12","fdt":"Sat 10 JUN 2023","ha":84,"sp":"1012","cc":"100","ws":"14","wg":"10","fl":"3984","rh":"46","tmx":"28","tmi":"21","rt":"0.0","ci":"cloudy","wk":"southeast1","lt":"","ln":""},{"fd":"4","fh":"15","fdt":"Sat 10 JUN 2023","ha":87,"sp":"1012","cc":"94","ws":"11","wg":"10","fl":"3878","rh":"49","tmx":"27","tmi":"26","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"4","fh":"18","fdt":"Sat 10 JUN 2023","ha":90,"sp":"1013","cc":"64","ws":"8","wg":"7","fl":"3987","rh":"56","tmx":"27","tmi":"25","rt":"0.0","ci":"mostcloud","wk":"southeast1","lt":"","ln":""},{"fd":"4","fh":"21","fdt":"Sat 10 JUN 2023","ha":93,"sp":"1015","cc":"34","ws":"3","wg":"3","fl":"3892","rh":"71","tmx":"25","tmi":"22","rt":"0.0","ci":"sunnyspell","wk":"south1","lt":"","ln":""},{"fd":"5","fh":"0","fdt":"Sun 11 JUN 2023","ha":96,"sp":"1014","cc":"100","ws":"1","wg":"1","fl":"3709","rh":"76","tmx":"25","tmi":"21","rt":"0.0","ci":"cloudy","wk":"northwest1","lt":"","ln":""},{"fd":"5","fh":"3","fdt":"Sun 11 JUN 2023","ha":99,"sp":"1014","cc":"100","ws":"3","wg":"4","fl":"3696","rh":"76","tmx":"21","tmi":"20","rt":"0.0","ci":"cloudy","wk":"north1","lt":"","ln":""},{"fd":"5","fh":"6","fdt":"Sun 11 JUN 2023","ha":102,"sp":"1014","cc":"1","ws":"3","wg":"4","fl":"3718","rh":"67","tmx":"22","tmi":"20","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"5","fh":"9","fdt":"Sun 11 JUN 2023","ha":105,"sp":"1014","cc":"5","ws":"4","wg":"4","fl":"3787","rh":"46","tmx":"26","tmi":"21","rt":"0.0","ci":"sunny","wk":"southeast1","lt":"","ln":""},{"fd":"5","fh":"12","fdt":"Sun 11 JUN 2023","ha":108,"sp":"1013","cc":"59","ws":"14","wg":"11","fl":"3808","rh":"37","tmx":"30","tmi":"21","rt":"0.0","ci":"sunnyspell","wk":"south1","lt":"","ln":""},{"fd":"5","fh":"15","fdt":"Sun 11 JUN 2023","ha":111,"sp":"1013","cc":"100","ws":"6","wg":"8","fl":"4046","rh":"50","tmx":"29","tmi":"26","rt":"0.9","ci":"shower","wk":"south1","lt":"","ln":""},{"fd":"5","fh":"18","fdt":"Sun 11 JUN 2023","ha":114,"sp":"1013","cc":"5","ws":"8","wg":"10","fl":"3880","rh":"50","tmx":"29","tmi":"24","rt":"0.3","ci":"lightrain","wk":"south1","lt":"","ln":""},{"fd":"5","fh":"21","fdt":"Sun 11 JUN 2023","ha":117,"sp":"1014","cc":"4","ws":"2","wg":"3","fl":"3815","rh":"56","tmx":"25","tmi":"22","rt":"0.0","ci":"sunny","wk":"south1","lt":"","ln":""},{"fd":"6","fh":"0","fdt":"Mon 12 JUN 2023","ha":120,"sp":"1014","cc":"2","ws":"2","wg":"3","fl":"3868","rh":"64","tmx":"25","tmi":"21","rt":"0.0","ci":"sunny","wk":"west1","lt":"","ln":""},{"fd":"6","fh":"3","fdt":"Mon 12 JUN 2023","ha":123,"sp":"1013","cc":"82","ws":"3","wg":"4","fl":"3739","rh":"75","tmx":"21","tmi":"19","rt":"2.4","ci":"shower","wk":"west1","lt":"","ln":""},{"fd":"6","fh":"6","fdt":"Mon 12 JUN 2023","ha":126,"sp":"1013","cc":"4","ws":"3","wg":"4","fl":"3779","rh":"66","tmx":"21","tmi":"19","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"6","fh":"9","fdt":"Mon 12 JUN 2023","ha":129,"sp":"1012","cc":"17","ws":"1","wg":"3","fl":"3712","rh":"46","tmx":"26","tmi":"21","rt":"0.0","ci":"sunnyspell","wk":"southeast1","lt":"","ln":""},{"fd":"6","fh":"12","fdt":"Mon 12 JUN 2023","ha":132,"sp":"1011","cc":"87","ws":"9","wg":"11","fl":"3704","rh":"33","tmx":"31","tmi":"21","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"6","fh":"15","fdt":"Mon 12 JUN 2023","ha":135,"sp":"1010","cc":"46","ws":"13","wg":"13","fl":"3683","rh":"39","tmx":"31","tmi":"29","rt":"0.0","ci":"sunnyspell","wk":"south1","lt":"","ln":""},{"fd":"6","fh":"18","fdt":"Mon 12 JUN 2023","ha":138,"sp":"1010","cc":"100","ws":"9","wg":"12","fl":"3748","rh":"48","tmx":"31","tmi":"25","rt":"0.3","ci":"lightrain","wk":"south1","lt":"","ln":""},{"fd":"6","fh":"21","fdt":"Mon 12 JUN 2023","ha":141,"sp":"1011","cc":"100","ws":"3","wg":"5","fl":"3760","rh":"54","tmx":"25","tmi":"23","rt":"0.3","ci":"lightrain","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"0","fdt":"Tue 13 JUN 2023","ha":144,"sp":"1010","cc":"86","ws":"2","wg":"3","fl":"3617","rh":"60","tmx":"25","tmi":"22","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"7","fh":"3","fdt":"Tue 13 JUN 2023","ha":147,"sp":"1010","cc":"100","ws":"7","wg":"11","fl":"3627","rh":"62","tmx":"22","tmi":"22","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"6","fdt":"Tue 13 JUN 2023","ha":150,"sp":"1010","cc":"83","ws":"4","wg":"6","fl":"3492","rh":"69","tmx":"22","tmi":"20","rt":"0.0","ci":"mostcloud","wk":"west1","lt":"","ln":""},{"fd":"7","fh":"9","fdt":"Tue 13 JUN 2023","ha":153,"sp":"1009","cc":"100","ws":"5","wg":"6","fl":"3579","rh":"44","tmx":"25","tmi":"21","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"12","fdt":"Tue 13 JUN 2023","ha":156,"sp":"1007","cc":"100","ws":"14","wg":"10","fl":"3593","rh":"41","tmx":"28","tmi":"21","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"15","fdt":"Tue 13 JUN 2023","ha":159,"sp":"1007","cc":"100","ws":"15","wg":"18","fl":"3831","rh":"58","tmx":"28","tmi":"24","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"18","fdt":"Tue 13 JUN 2023","ha":162,"sp":"1007","cc":"100","ws":"6","wg":"9","fl":"3439","rh":"60","tmx":"28","tmi":"23","rt":"2.1","ci":"shower","wk":"south1","lt":"","ln":""},{"fd":"7","fh":"21","fdt":"Tue 13 JUN 2023","ha":165,"sp":"1008","cc":"100","ws":"3","wg":"5","fl":"3443","rh":"72","tmx":"22","tmi":"20","rt":"3.0","ci":"shower","wk":"northwest1","lt":"","ln":""},{"fd":"8","fh":"0","fdt":"Wed 14 JUN 2023","ha":168,"sp":"1008","cc":"100","ws":"5","wg":"7","fl":"3394","rh":"82","tmx":"22","tmi":"18","rt":"0.9","ci":"shower","wk":"north1","lt":"","ln":""},{"fd":"8","fh":"3","fdt":"Wed 14 JUN 2023","ha":171,"sp":"1007","cc":"83","ws":"4","wg":"5","fl":"3357","rh":"81","tmx":"18","tmi":"17","rt":"0.3","ci":"lightrain","wk":"north1","lt":"","ln":""},{"fd":"8","fh":"6","fdt":"Wed 14 JUN 2023","ha":174,"sp":"1007","cc":"100","ws":"4","wg":"6","fl":"3339","rh":"77","tmx":"19","tmi":"17","rt":"0.9","ci":"shower","wk":"north1","lt":"","ln":""},{"fd":"8","fh":"9","fdt":"Wed 14 JUN 2023","ha":177,"sp":"1006","cc":"100","ws":"8","wg":"11","fl":"3299","rh":"79","tmx":"19","tmi":"18","rt":"2.4","ci":"lightrain","wk":"north1","lt":"","ln":""},{"fd":"8","fh":"12","fdt":"Wed 14 JUN 2023","ha":180,"sp":"1007","cc":"100","ws":"3","wg":"5","fl":"3282","rh":"68","tmx":"21","tmi":"18","rt":"1.8","ci":"shower","wk":"northeast1","lt":"","ln":""},{"fd":"8","fh":"15","fdt":"Wed 14 JUN 2023","ha":183,"sp":"1006","cc":"100","ws":"5","wg":"6","fl":"3392","rh":"62","tmx":"22","tmi":"21","rt":"2.1","ci":"shower","wk":"east1","lt":"","ln":""},{"fd":"8","fh":"18","fdt":"Wed 14 JUN 2023","ha":186,"sp":"1007","cc":"100","ws":"3","wg":"3","fl":"3396","rh":"79","tmx":"22","tmi":"19","rt":"1.5","ci":"shower","wk":"east1","lt":"","ln":""},{"fd":"8","fh":"21","fdt":"Wed 14 JUN 2023","ha":189,"sp":"1008","cc":"100","ws":"3","wg":"4","fl":"3457","rh":"83","tmx":"19","tmi":"18","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"9","fh":"0","fdt":"Thu 15 JUN 2023","ha":192,"sp":"1008","cc":"100","ws":"3","wg":"4","fl":"3559","rh":"87","tmx":"19","tmi":"18","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"9","fh":"3","fdt":"Thu 15 JUN 2023","ha":195,"sp":"1008","cc":"100","ws":"2","wg":"3","fl":"3566","rh":"85","tmx":"18","tmi":"18","rt":"0.0","ci":"cloudy","wk":"west1","lt":"","ln":""},{"fd":"9","fh":"6","fdt":"Thu 15 JUN 2023","ha":198,"sp":"1009","cc":"54","ws":"3","wg":"8","fl":"3577","rh":"78","tmx":"19","tmi":"18","rt":"0.0","ci":"sunnyspell","wk":"northwest1","lt":"","ln":""},{"fd":"9","fh":"9","fdt":"Thu 15 JUN 2023","ha":201,"sp":"1009","cc":"34","ws":"5","wg":"6","fl":"3657","rh":"50","tmx":"24","tmi":"19","rt":"0.0","ci":"sunnyspell","wk":"northwest1","lt":"","ln":""},{"fd":"9","fh":"12","fdt":"Thu 15 JUN 2023","ha":204,"sp":"1009","cc":"92","ws":"6","wg":"6","fl":"3778","rh":"37","tmx":"28","tmi":"19","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"9","fh":"15","fdt":"Thu 15 JUN 2023","ha":207,"sp":"1008","cc":"75","ws":"14","wg":"14","fl":"4082","rh":"37","tmx":"29","tmi":"27","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"9","fh":"18","fdt":"Thu 15 JUN 2023","ha":210,"sp":"1009","cc":"81","ws":"10","wg":"14","fl":"4104","rh":"45","tmx":"29","tmi":"25","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"9","fh":"21","fdt":"Thu 15 JUN 2023","ha":213,"sp":"1011","cc":"90","ws":"6","wg":"12","fl":"3722","rh":"58","tmx":"25","tmi":"22","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"10","fh":"0","fdt":"Fri 16 JUN 2023","ha":216,"sp":"1010","cc":"2","ws":"0","wg":"1","fl":"3902","rh":"68","tmx":"25","tmi":"20","rt":"0.0","ci":"sunny","wk":"south1","lt":"","ln":""},{"fd":"10","fh":"3","fdt":"Fri 16 JUN 2023","ha":219,"sp":"1009","cc":"0","ws":"4","wg":"5","fl":"3952","rh":"67","tmx":"20","tmi":"20","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"10","fh":"6","fdt":"Fri 16 JUN 2023","ha":222,"sp":"1010","cc":"0","ws":"4","wg":"6","fl":"3837","rh":"62","tmx":"21","tmi":"19","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"10","fh":"9","fdt":"Fri 16 JUN 2023","ha":225,"sp":"1010","cc":"0","ws":"3","wg":"3","fl":"3888","rh":"47","tmx":"24","tmi":"20","rt":"0.0","ci":"sunny","wk":"east1","lt":"","ln":""},{"fd":"10","fh":"12","fdt":"Fri 16 JUN 2023","ha":228,"sp":"1009","cc":"85","ws":"11","wg":"8","fl":"3889","rh":"45","tmx":"27","tmi":"20","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"10","fh":"15","fdt":"Fri 16 JUN 2023","ha":231,"sp":"1009","cc":"72","ws":"9","wg":"9","fl":"3949","rh":"44","tmx":"27","tmi":"24","rt":"0.3","ci":"lightrain","wk":"southeast1","lt":"","ln":""},{"fd":"10","fh":"18","fdt":"Fri 16 JUN 2023","ha":234,"sp":"1009","cc":"92","ws":"12","wg":"11","fl":"4027","rh":"51","tmx":"27","tmi":"24","rt":"0.0","ci":"mostcloud","wk":"south1","lt":"","ln":""},{"fd":"10","fh":"21","fdt":"Fri 16 JUN 2023","ha":237,"sp":"1011","cc":"100","ws":"7","wg":"13","fl":"3937","rh":"51","tmx":"24","tmi":"22","rt":"0.0","ci":"cloudy","wk":"east1","lt":"","ln":""},{"fd":"11","fh":"0","fdt":"Sat 17 JUN 2023","ha":240,"sp":"1011","cc":"100","ws":"5","wg":"11","fl":"3830","rh":"58","tmx":"24","tmi":"20","rt":"0.0","ci":"cloudy","wk":"east1","lt":"","ln":""},{"fd":"11","fh":"3","fdt":"Sat 17 JUN 2023","ha":243,"sp":"1011","cc":"100","ws":"3","wg":"3","fl":"3860","rh":"75","tmx":"17","tmi":"16","rt":"0.0","ci":"cloudy","wk":"northeast1","lt":"","ln":""},{"fd":"11","fh":"6","fdt":"Sat 17 JUN 2023","ha":246,"sp":"1012","cc":"100","ws":"2","wg":"3","fl":"3864","rh":"75","tmx":"17","tmi":"16","rt":"0.0","ci":"cloudy","wk":"east1","lt":"","ln":""},{"fd":"11","fh":"9","fdt":"Sat 17 JUN 2023","ha":249,"sp":"1012","cc":"100","ws":"3","wg":"3","fl":"3838","rh":"62","tmx":"21","tmi":"16","rt":"0.0","ci":"cloudy","wk":"south1","lt":"","ln":""},{"fd":"11","fh":"12","fdt":"Sat 17 JUN 2023","ha":252,"sp":"1012","cc":"99","ws":"6","wg":"7","fl":"3873","rh":"52","tmx":"23","tmi":"16","rt":"0.0","ci":"mostcloud","wk":"southwest1","lt":"","ln":""},{"fd":"11","fh":"15","fdt":"Sat 17 JUN 2023","ha":255,"sp":"1010","cc":"8","ws":"3","wg":"10","fl":"3623","rh":"37","tmx":"26","tmi":"23","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"11","fh":"18","fdt":"Sat 17 JUN 2023","ha":258,"sp":"1011","cc":"96","ws":"6","wg":"13","fl":"3612","rh":"61","tmx":"26","tmi":"21","rt":"0.9","ci":"shower","wk":"southeast1","lt":"","ln":""},{"fd":"11","fh":"21","fdt":"Sat 17 JUN 2023","ha":261,"sp":"1014","cc":"100","ws":"4","wg":"7","fl":"3498","rh":"94","tmx":"21","tmi":"16","rt":"6.9","ci":"shower","wk":"northeast1","lt":"","ln":""},{"fd":"12","fh":"0","fdt":"Sun 18 JUN 2023","ha":264,"sp":"1014","cc":"0","ws":"4","wg":"5","fl":"3750","rh":"94","tmx":"21","tmi":"14","rt":"2.1","ci":"shower","wk":"northeast1","lt":"","ln":""},{"fd":"12","fh":"3","fdt":"Sun 18 JUN 2023","ha":267,"sp":"1014","cc":"0","ws":"5","wg":"5","fl":"3974","rh":"88","tmx":"14","tmi":"13","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"12","fh":"6","fdt":"Sun 18 JUN 2023","ha":270,"sp":"1015","cc":"5","ws":"4","wg":"6","fl":"4222","rh":"79","tmx":"15","tmi":"12","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"12","fh":"9","fdt":"Sun 18 JUN 2023","ha":273,"sp":"1014","cc":"0","ws":"3","wg":"3","fl":"4295","rh":"50","tmx":"22","tmi":"15","rt":"0.0","ci":"sunny","wk":"south1","lt":"","ln":""},{"fd":"12","fh":"12","fdt":"Sun 18 JUN 2023","ha":276,"sp":"1013","cc":"0","ws":"6","wg":"7","fl":"4448","rh":"42","tmx":"25","tmi":"15","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"12","fh":"15","fdt":"Sun 18 JUN 2023","ha":279,"sp":"1011","cc":"100","ws":"6","wg":"14","fl":"4519","rh":"41","tmx":"28","tmi":"25","rt":"0.0","ci":"cloudy","wk":"southwest1","lt":"","ln":""},{"fd":"12","fh":"18","fdt":"Sun 18 JUN 2023","ha":282,"sp":"1012","cc":"26","ws":"6","wg":"12","fl":"4505","rh":"61","tmx":"28","tmi":"23","rt":"0.0","ci":"sunnyspell","wk":"south1","lt":"","ln":""},{"fd":"12","fh":"21","fdt":"Sun 18 JUN 2023","ha":285,"sp":"1014","cc":"100","ws":"1","wg":"2","fl":"4495","rh":"76","tmx":"23","tmi":"18","rt":"0.0","ci":"cloudy","wk":"east1","lt":"","ln":""},{"fd":"13","fh":"0","fdt":"Mon 19 JUN 2023","ha":288,"sp":"1014","cc":"42","ws":"2","wg":"3","fl":"4327","rh":"82","tmx":"23","tmi":"16","rt":"0.0","ci":"sunnyspell","wk":"north1","lt":"","ln":""},{"fd":"13","fh":"3","fdt":"Mon 19 JUN 2023","ha":291,"sp":"1013","cc":"2","ws":"3","wg":"3","fl":"4271","rh":"83","tmx":"16","tmi":"16","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"13","fh":"6","fdt":"Mon 19 JUN 2023","ha":294,"sp":"1012","cc":"37","ws":"3","wg":"4","fl":"4374","rh":"70","tmx":"19","tmi":"15","rt":"0.0","ci":"sunnyspell","wk":"northeast1","lt":"","ln":""},{"fd":"13","fh":"9","fdt":"Mon 19 JUN 2023","ha":297,"sp":"1014","cc":"100","ws":"4","wg":"6","fl":"3661","rh":"74","tmx":"22","tmi":"19","rt":"0.6","ci":"shower","wk":"northwest1","lt":"","ln":""},{"fd":"13","fh":"12","fdt":"Mon 19 JUN 2023","ha":300,"sp":"1012","cc":"100","ws":"7","wg":"6","fl":"3637","rh":"55","tmx":"25","tmi":"18","rt":"0.9","ci":"lightrain","wk":"south1","lt":"","ln":""},{"fd":"13","fh":"15","fdt":"Mon 19 JUN 2023","ha":303,"sp":"1012","cc":"98","ws":"5","wg":"5","fl":"3778","rh":"58","tmx":"24","tmi":"18","rt":"3.9","ci":"shower","wk":"north1","lt":"","ln":""},{"fd":"13","fh":"18","fdt":"Mon 19 JUN 2023","ha":306,"sp":"1011","cc":"6","ws":"5","wg":"8","fl":"3843","rh":"76","tmx":"24","tmi":"18","rt":"1.8","ci":"lightrain","wk":"north1","lt":"","ln":""},{"fd":"13","fh":"21","fdt":"Mon 19 JUN 2023","ha":309,"sp":"1013","cc":"2","ws":"3","wg":"4","fl":"3617","rh":"92","tmx":"19","tmi":"14","rt":"1.8","ci":"shower","wk":"north1","lt":"","ln":""},{"fd":"14","fh":"0","fdt":"Tue 20 JUN 2023","ha":312,"sp":"1012","cc":"1","ws":"3","wg":"4","fl":"3513","rh":"91","tmx":"19","tmi":"14","rt":"0.9","ci":"shower","wk":"northeast1","lt":"","ln":""},{"fd":"14","fh":"3","fdt":"Tue 20 JUN 2023","ha":315,"sp":"1011","cc":"0","ws":"3","wg":"3","fl":"3366","rh":"92","tmx":"14","tmi":"13","rt":"0.3","ci":"lightrain","wk":"northeast1","lt":"","ln":""},{"fd":"14","fh":"6","fdt":"Tue 20 JUN 2023","ha":318,"sp":"1012","cc":"28","ws":"2","wg":"3","fl":"3273","rh":"89","tmx":"15","tmi":"13","rt":"0.3","ci":"lightrain","wk":"northeast1","lt":"","ln":""},{"fd":"14","fh":"9","fdt":"Tue 20 JUN 2023","ha":321,"sp":"1013","cc":"53","ws":"5","wg":"4","fl":"3498","rh":"70","tmx":"20","tmi":"15","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"14","fh":"12","fdt":"Tue 20 JUN 2023","ha":324,"sp":"1013","cc":"10","ws":"5","wg":"5","fl":"3600","rh":"48","tmx":"24","tmi":"15","rt":"0.6","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"14","fh":"15","fdt":"Tue 20 JUN 2023","ha":327,"sp":"1013","cc":"100","ws":"9","wg":"10","fl":"3594","rh":"48","tmx":"25","tmi":"23","rt":"1.2","ci":"shower","wk":"south1","lt":"","ln":""},{"fd":"14","fh":"18","fdt":"Tue 20 JUN 2023","ha":330,"sp":"1016","cc":"3","ws":"4","wg":"8","fl":"3566","rh":"80","tmx":"25","tmi":"18","rt":"1.2","ci":"shower","wk":"south1","lt":"","ln":""},{"fd":"14","fh":"21","fdt":"Tue 20 JUN 2023","ha":333,"sp":"1019","cc":"81","ws":"1","wg":"1","fl":"3616","rh":"94","tmx":"19","tmi":"15","rt":"0.9","ci":"shower","wk":"east1","lt":"","ln":""},{"fd":"15","fh":"0","fdt":"Wed 21 JUN 2023","ha":336,"sp":"1019","cc":"47","ws":"3","wg":"3","fl":"3646","rh":"95","tmx":"19","tmi":"14","rt":"0.3","ci":"lightrain","wk":"northeast1","lt":"","ln":""},{"fd":"15","fh":"3","fdt":"Wed 21 JUN 2023","ha":339,"sp":"1018","cc":"99","ws":"3","wg":"3","fl":"3852","rh":"93","tmx":"16","tmi":"15","rt":"0.0","ci":"mostcloud","wk":"northeast1","lt":"","ln":""},{"fd":"15","fh":"6","fdt":"Wed 21 JUN 2023","ha":342,"sp":"1019","cc":"43","ws":"3","wg":"3","fl":"3802","rh":"86","tmx":"16","tmi":"15","rt":"0.0","ci":"sunnyspell","wk":"north1","lt":"","ln":""},{"fd":"15","fh":"9","fdt":"Wed 21 JUN 2023","ha":345,"sp":"1019","cc":"6","ws":"4","wg":"4","fl":"3870","rh":"63","tmx":"21","tmi":"16","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"15","fh":"12","fdt":"Wed 21 JUN 2023","ha":348,"sp":"1017","cc":"3","ws":"5","wg":"5","fl":"4089","rh":"47","tmx":"25","tmi":"16","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"15","fh":"15","fdt":"Wed 21 JUN 2023","ha":351,"sp":"1016","cc":"34","ws":"6","wg":"4","fl":"4124","rh":"38","tmx":"27","tmi":"25","rt":"0.3","ci":"lightrain","wk":"southwest1","lt":"","ln":""},{"fd":"15","fh":"18","fdt":"Wed 21 JUN 2023","ha":354,"sp":"1017","cc":"100","ws":"7","wg":"14","fl":"4455","rh":"68","tmx":"27","tmi":"21","rt":"0.3","ci":"lightrain","wk":"southeast1","lt":"","ln":""},{"fd":"15","fh":"21","fdt":"Wed 21 JUN 2023","ha":357,"sp":"1019","cc":"0","ws":"3","wg":"3","fl":"4399","rh":"86","tmx":"21","tmi":"17","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"16","fh":"0","fdt":"Thu 22 JUN 2023","ha":360,"sp":"1019","cc":"0","ws":"3","wg":"4","fl":"4358","rh":"90","tmx":"21","tmi":"16","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"16","fh":"3","fdt":"Thu 22 JUN 2023","ha":363,"sp":"1018","cc":"0","ws":"4","wg":"5","fl":"4387","rh":"89","tmx":"16","tmi":"15","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""},{"fd":"16","fh":"6","fdt":"Thu 22 JUN 2023","ha":366,"sp":"1018","cc":"0","ws":"3","wg":"4","fl":"4373","rh":"75","tmx":"18","tmi":"15","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"16","fh":"9","fdt":"Thu 22 JUN 2023","ha":369,"sp":"1017","cc":"2","ws":"4","wg":"4","fl":"4414","rh":"50","tmx":"24","tmi":"18","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"16","fh":"12","fdt":"Thu 22 JUN 2023","ha":372,"sp":"1016","cc":"0","ws":"3","wg":"4","fl":"4433","rh":"37","tmx":"28","tmi":"18","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"16","fh":"15","fdt":"Thu 22 JUN 2023","ha":375,"sp":"1015","cc":"0","ws":"2","wg":"3","fl":"4464","rh":"31","tmx":"30","tmi":"28","rt":"0.0","ci":"sunny","wk":"southwest1","lt":"","ln":""},{"fd":"16","fh":"18","fdt":"Thu 22 JUN 2023","ha":378,"sp":"1015","cc":"0","ws":"8","wg":"12","fl":"4642","rh":"49","tmx":"30","tmi":"27","rt":"0.0","ci":"sunny","wk":"southeast1","lt":"","ln":""},{"fd":"16","fh":"21","fdt":"Thu 22 JUN 2023","ha":381,"sp":"1019","cc":"0","ws":"4","wg":"4","fl":"4549","rh":"80","tmx":"26","tmi":"19","rt":"0.0","ci":"sunny","wk":"northeast1","lt":"","ln":""},{"fd":"17","fh":"0","fdt":"Fri 23 JUN 2023","ha":384,"sp":"1019","cc":"0","ws":"4","wg":"5","fl":"4472","rh":"82","tmx":"26","tmi":"18","rt":"0.0","ci":"sunny","wk":"north1","lt":"","ln":""}';
+        var lat ="23";
+        var lon = "-2";
+        var elem;
+var gfsrun = "00";
+function setDayView(){$("#dh th").each(function(){$(this).hasClass("hidden-xs")?$(this).toggleClass("hidden-xs _hidden-xs"):$(this).hasClass("_hidden-xs")&&$(this).toggleClass("_hidden-xs hidden-xs")}),$("#df td").each(function(){$(this).hasClass("hidden-xs")?$(this).toggleClass("hidden-xs _hidden-xs"):$(this).hasClass("_hidden-xs")&&$(this).toggleClass("_hidden-xs hidden-xs")}),$(".xs-wind").toggleClass("hidden hidden-xs"),$("#units-wrapper").toggleClass("hidden-xs")}function setMoChart(e){for(var t=document.querySelectorAll("#mo-lg-btns > label"),s=0;s<t.length;s++)t[s].classList.remove("active");var a=document.getElementById("mo-img");null!=a||(elem=document.createElement("img"),elem.id="mo-img",elem.classList.add("img-responsive"),document.getElementById("mochart").appendChild(elem));var n="https://www.theweatheroutlook.com/charts/mogreps/mogreps"+e+lat+"_"+lon+".png";elem.src=n}$(document).ready(function(){var e=localStorage.getItem("day");"true"==e&&setDayView();var t=$("h1").text();-1!=t.indexOf("Checking location")&&($("#geospin").removeClass("hidden"),doReverse(!0,null,null),$("#geoLoc").removeClass("hidden")),$("#full-summary").click(function(){"false"==e?localStorage.setItem("day","true"):localStorage.setItem("day","false"),setDayView()}),$("#btnWsfgli").click(function(){parseInt(screen.width)<768?drawChart("","","","","",40,"","","",""):drawChart()}),setUnits()}),window.addEventListener("load",function(){var e=document.createElement("script");e.async=!0,e.defer=!0,e.src="https://www.gstatic.com/charts/loader.js",document.getElementsByTagName("head")[0].appendChild(e),e.onload=function(){google.charts.load("current",{packages:["corechart"]});var e=getCookie("twograph");"1"==e?google.charts.setOnLoadCallback(function(){dispgraph("1","")}):google.charts.setOnLoadCallback(function(){dispgraph("0","")})}});
+function showMore(b){var a=0;if(gfsrun=="00"){if(b>1){a=((b-1)*24)+15}else{a=15}}if(gfsrun=="06"){if(b>1){a=((b-1)*24)+9}else{a=9}}if(gfsrun=="12"){if(b>1){a=((b*24)+3)}else{a=27}}if(gfsrun=="18"){if(b>1){a=((b*24)-3)}else{a=21}}document.getElementById("eurmslp-d"+b).src="https://www.theweatheroutlook.com/charts/gfs/"+gfsrun+"_"+a+"_eurmslp_preciptype.png?h=325";document.getElementById("mslp-d"+b).src="https://www.theweatheroutlook.com/charts/gfs/"+gfsrun+"_"+a+"_mslp850_eur.png?h=325";if(document.getElementById("d-"+b).classList.contains("hidden")){document.getElementById("d-"+b).classList.remove("hidden")}else{document.getElementById("d-"+b).classList.add("hidden")}};
+
+</script>
+
+<div class="row hidden-print">
+
+
+<div class="nav nav-justified navbar-default">
+<div class="col-md-4 col-sm-4 col-xs-4">
+<h2>TWO &copy;2023</h2>
+<p><strong>Cookies</strong></p>
+<p>
+<a href="//www.theweatheroutlook.com/twoother/cookie-policy.aspx" id="sgra4">Policy</a>
+</p>
+<p>
+<a href="//www.theweatheroutlook.com/twoother/privacy.aspx" id="sgra2">Privacy</a>
+</p>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4">
+<h2>About Us</h2>
+<p>
+<a href="//www.theweatheroutlook.com/twoother/twositemap.aspx" id="sgra3">Sitemap</a>
+</p>
+<p><a href="//www.theweatheroutlook.com/twoother/twofeedback.aspx">Contact Us</a></p>
+<p><a href="//www.theweatheroutlook.com/twoother/twobusiness.aspx">Commercial services</a></p>
+<p><a href="//www.theweatheroutlook.com/twoother/othdisclaimer.aspx">Disclaimer</a></p>
+<p><a href="//www.theweatheroutlook.com/twoother/about.aspx">About TWO</a></p>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4">
+<h2>Social Media</h2>
+
+<div>
+<a href="https://www.facebook.com/pages/TheWeatherOutlook/34496051285">
+<img alt="Facebook logo" width="32" height="32" src="/Images/facebook.png" />
+Facebook</a>
+</div>
+<div>
+<a href="https://twitter.com/twoweather">
+<img alt="Twitter logo" width="32" height="32" src="/Images/twitter.png" />
+Twitter</a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</form>
+
+<script>!function(){new LazyLoad({threshold:300})}();</script>
+</body>
+ 
+
+</html>
